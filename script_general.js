@@ -127,50 +127,6 @@
  "layout": "absolute",
  "paddingTop": 0,
  "definitions": [{
- "scrollBarWidth": 10,
- "children": [
-  "this.IconButton_38922473_0C06_2593_4199_C585853A1AB3"
- ],
- "id": "Container_3A67552A_0C3A_67BD_4195_ECE46CCB34EA",
- "paddingLeft": 0,
- "paddingRight": 0,
- "width": "100%",
- "gap": 10,
- "minHeight": 1,
- "scrollBarColor": "#000000",
- "horizontalAlign": "left",
- "borderSize": 0,
- "height": 140,
- "propagateClick": false,
- "paddingBottom": 0,
- "minWidth": 1,
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "Container",
- "backgroundColor": [
-  "#FFFFFF",
-  "#FFFFFF"
- ],
- "verticalAlign": "top",
- "backgroundColorDirection": "vertical",
- "creationPolicy": "inAdvance",
- "contentOpaque": false,
- "scrollBarMargin": 2,
- "backgroundOpacity": 0.3,
- "borderRadius": 0,
- "overflow": "scroll",
- "shadow": false,
- "layout": "absolute",
- "paddingTop": 0,
- "backgroundColorRatios": [
-  0,
-  1
- ],
- "data": {
-  "name": "header"
- }
-},
-{
  "rotationY": 0,
  "rotationX": 0,
  "popupDistance": 100,
@@ -199,6 +155,25 @@
  "hfov": 4.21
 },
 {
+ "movementMode": "constrained",
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerMapPlayer",
+ "class": "MapPlayer"
+},
+{
+ "initialPosition": {
+  "yaw": 0,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_F6CC79A7_FBDD_B6F4_41EA_8A9A052A088D",
+ "id": "panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6_camera",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
+},
+{
  "rotationY": 0,
  "rotationX": 0,
  "popupDistance": 100,
@@ -225,19 +200,6 @@
  "showEasing": "cubic_in",
  "yaw": 40.3,
  "hfov": 2.66
-},
-{
- "initialPosition": {
-  "yaw": 0,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_F6CC79A7_FBDD_B6F4_41EA_8A9A052A088D",
- "id": "panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6_camera",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
 },
 {
  "initialPosition": {
@@ -628,28 +590,11 @@
  }
 },
 {
- "id": "ImageResource_D043E6A7_FCC4_DAF5_41E1_AE7B4A83443F",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 560
-  },
-  {
-   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 298
-  },
-  {
-   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 149
-  }
- ]
+ "viewerArea": "this.MainViewer",
+ "id": "MainViewerPhotoAlbumPlayer",
+ "buttonPrevious": "this.IconButton_2A19BC4C_0D3B_DFF0_419F_D0DCB12FF482",
+ "class": "PhotoAlbumPlayer",
+ "buttonNext": "this.IconButton_2A19AC4C_0D3B_DFF0_4181_A2C230C2E510"
 },
 {
  "rotationY": 0,
@@ -892,158 +837,27 @@
  "hfov": 3.12
 },
 {
- "data": {
-  "name": "Window78461"
- },
- "id": "window_D001FBF7_FC4F_6A54_41DA_493ED2234296",
- "paddingLeft": 0,
- "shadowVerticalLength": 0,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 800,
- "scrollBarColor": "#000000",
- "gap": 10,
- "veilOpacity": 0.4,
- "minHeight": 20,
- "closeButtonIconHeight": 12,
- "overflow": "scroll",
- "closeButtonIconWidth": 12,
- "horizontalAlign": "center",
- "borderSize": 0,
- "modal": true,
- "titleFontStyle": "normal",
- "closeButtonIconLineWidth": 2,
- "height": 800,
- "propagateClick": false,
- "showEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "minWidth": 20,
- "titleFontFamily": "Arial",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "class": "Window",
- "backgroundColor": [],
- "headerPaddingBottom": 10,
- "veilColorRatios": [
-  0,
-  1
- ],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "closeButtonPressedIconColor": "#FFFFFF",
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "contentOpaque": false,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "title": "Adquisici\u00f3n y Restauraci\u00f3n",
- "bodyBorderColor": "#000000",
- "backgroundOpacity": 1,
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "bodyBackgroundOpacity": 1,
- "shadow": true,
- "veilColorDirection": "horizontal",
- "headerPaddingTop": 10,
- "borderRadius": 5,
- "scrollBarWidth": 10,
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "titlePaddingBottom": 5,
- "closeButtonIconColor": "#000000",
- "closeButtonRollOverIconColor": "#FFFFFF",
- "backgroundColorRatios": [],
- "children": [
-  "this.htmlText_D007ABF7_FC4F_6A54_4187_A042DBA2B2B1"
- ],
- "paddingRight": 0,
- "titleFontSize": "2.22vmin",
- "shadowColor": "#000000",
- "shadowBlurRadius": 6,
- "bodyBackgroundColorDirection": "vertical",
- "footerBackgroundColorDirection": "vertical",
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "headerBackgroundColorDirection": "vertical",
- "titleFontColor": "#000000",
- "footerHeight": 5,
- "bodyPaddingRight": 5,
- "veilHideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "shadowOpacity": 0.5,
- "paddingBottom": 0,
- "shadowSpread": 1,
- "veilShowEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "closeButtonBackgroundColorRatios": [],
- "scrollBarOpacity": 0.5,
- "hideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "scrollBarVisible": "rollOver",
- "headerVerticalAlign": "middle",
- "bodyBorderSize": 0,
- "verticalAlign": "middle",
- "titlePaddingTop": 5,
- "headerPaddingRight": 10,
- "bodyPaddingTop": 5,
- "backgroundColorDirection": "vertical",
- "titlePaddingRight": 5,
- "bodyPaddingBottom": 5,
- "scrollBarMargin": 2,
- "titlePaddingLeft": 5,
- "headerBorderColor": "#000000",
- "headerPaddingLeft": 10,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "headerBorderSize": 0,
- "titleTextDecoration": "none",
- "bodyPaddingLeft": 5,
- "headerBackgroundOpacity": 1,
- "titleFontWeight": "bold",
- "layout": "vertical",
- "paddingTop": 0,
- "closeButtonBorderRadius": 11,
- "closeButtonBackgroundColor": [],
- "shadowHorizontalLength": 3,
- "veilColor": [
-  "#000000",
-  "#000000"
+ "id": "ImageResource_D043E6A7_FCC4_DAF5_41E1_AE7B4A83443F",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 560
+  },
+  {
+   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 298
+  },
+  {
+   "url": "media/popup_E3A081B9_FCC7_76DC_41E8_CF45D3F0CC52_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 149
+  }
  ]
 },
 {
@@ -1730,159 +1544,32 @@
  ]
 },
 {
- "data": {
-  "name": "Window75235"
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_D6531218_FCC5_B5DC_41E6_7A4F5E34C051",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_D6531218_FCC5_B5DC_41E6_7A4F5E34C051_0_1.jpg",
+    "width": 1024,
+    "class": "ImageResourceLevel",
+    "height": 682
+   }
+  ]
  },
- "id": "window_D775C92F_FC45_77F4_41E5_BE6A8D047E0D",
- "paddingLeft": 0,
- "shadowVerticalLength": 0,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 800,
- "scrollBarColor": "#000000",
- "gap": 10,
- "veilOpacity": 0.4,
- "minHeight": 20,
- "closeButtonIconHeight": 12,
- "overflow": "scroll",
- "closeButtonIconWidth": 12,
- "horizontalAlign": "center",
- "borderSize": 0,
- "modal": true,
- "titleFontStyle": "normal",
- "closeButtonIconLineWidth": 2,
- "height": 800,
- "propagateClick": false,
- "showEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "minWidth": 20,
- "titleFontFamily": "Arial",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "class": "Window",
- "backgroundColor": [],
- "headerPaddingBottom": 10,
- "veilColorRatios": [
-  0,
-  1
- ],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "closeButtonPressedIconColor": "#FFFFFF",
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "contentOpaque": false,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "title": "Porqu\u00e9 la llamamos Casa de la Independencia",
- "bodyBorderColor": "#000000",
- "backgroundOpacity": 1,
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "bodyBackgroundOpacity": 1,
- "shadow": true,
- "veilColorDirection": "horizontal",
- "headerPaddingTop": 10,
- "borderRadius": 5,
- "scrollBarWidth": 10,
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "titlePaddingBottom": 5,
- "closeButtonIconColor": "#000000",
- "closeButtonRollOverIconColor": "#FFFFFF",
- "backgroundColorRatios": [],
- "children": [
-  "this.htmlText_D776C92E_FC45_77F4_41D2_8D3D6C133200"
- ],
- "paddingRight": 0,
- "titleFontSize": "2.22vmin",
- "shadowColor": "#000000",
- "shadowBlurRadius": 6,
- "bodyBackgroundColorDirection": "vertical",
- "footerBackgroundColorDirection": "vertical",
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "headerBackgroundColorDirection": "vertical",
- "veilShowEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "footerHeight": 5,
- "bodyPaddingRight": 5,
- "veilHideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "shadowOpacity": 0.5,
- "paddingBottom": 0,
- "shadowSpread": 1,
- "titleFontColor": "#000000",
- "closeButtonBackgroundColorRatios": [],
- "scrollBarOpacity": 0.5,
- "hideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "scrollBarVisible": "rollOver",
- "headerVerticalAlign": "middle",
- "bodyBorderSize": 0,
- "verticalAlign": "middle",
- "titlePaddingTop": 5,
- "headerPaddingRight": 10,
- "bodyPaddingTop": 5,
- "backgroundColorDirection": "vertical",
- "titlePaddingRight": 5,
- "bodyPaddingBottom": 5,
- "scrollBarMargin": 2,
- "titlePaddingLeft": 5,
- "headerBorderColor": "#000000",
- "headerPaddingLeft": 10,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "headerBorderSize": 0,
- "titleTextDecoration": "none",
- "bodyPaddingLeft": 5,
- "headerBackgroundOpacity": 1,
- "titleFontWeight": "bold",
- "layout": "vertical",
- "paddingTop": 0,
- "closeButtonBorderRadius": 11,
- "closeButtonBackgroundColor": [],
- "shadowHorizontalLength": 3,
- "veilColor": [
-  "#000000",
-  "#000000"
- ]
+ "pitch": -21.06,
+ "showEasing": "cubic_in",
+ "yaw": -88.37,
+ "hfov": 4
 },
 {
  "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_3_t.jpg",
@@ -1931,6 +1618,19 @@
  "paddingTop": 0,
  "cursor": "hand",
  "maxWidth": 60
+},
+{
+ "initialPosition": {
+  "yaw": -115.48,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C8D20441_FC7D_5DAC_41B3_625D03A6A10A",
+ "id": "camera_C8D2F441_FC7D_5DAC_41C2_D25A7D6D2E48",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "rotationY": 0,
@@ -2535,32 +2235,159 @@
  ]
 },
 {
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 682
-   }
-  ]
+ "data": {
+  "name": "Window86764"
  },
- "pitch": -7.35,
- "showEasing": "cubic_in",
- "yaw": 107.45,
- "hfov": 4.66
+ "id": "window_D3C16EC1_FC5C_AAAD_41E2_F0C2F133CC0A",
+ "paddingLeft": 0,
+ "shadowVerticalLength": 0,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 800,
+ "scrollBarColor": "#000000",
+ "gap": 10,
+ "veilOpacity": 0.4,
+ "minHeight": 20,
+ "closeButtonIconHeight": 12,
+ "overflow": "scroll",
+ "closeButtonIconWidth": 12,
+ "horizontalAlign": "center",
+ "borderSize": 0,
+ "modal": true,
+ "titleFontStyle": "normal",
+ "closeButtonIconLineWidth": 2,
+ "height": 800,
+ "propagateClick": false,
+ "showEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "minWidth": 20,
+ "titleFontFamily": "Arial",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "class": "Window",
+ "backgroundColor": [],
+ "headerPaddingBottom": 10,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "contentOpaque": false,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "title": "El Museo",
+ "bodyBorderColor": "#000000",
+ "backgroundOpacity": 1,
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "bodyBackgroundOpacity": 1,
+ "shadow": true,
+ "veilColorDirection": "horizontal",
+ "headerPaddingTop": 10,
+ "borderRadius": 5,
+ "scrollBarWidth": 10,
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "titlePaddingBottom": 5,
+ "closeButtonIconColor": "#000000",
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "backgroundColorRatios": [],
+ "children": [
+  "this.htmlText_D3C32EC1_FC5C_AAAD_41EE_DA3EBCAE05CE"
+ ],
+ "paddingRight": 0,
+ "titleFontSize": "18px",
+ "shadowColor": "#000000",
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColorDirection": "vertical",
+ "footerBackgroundColorDirection": "vertical",
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontColor": "#000000",
+ "footerHeight": 5,
+ "bodyPaddingRight": 5,
+ "veilHideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "shadowOpacity": 0.5,
+ "paddingBottom": 0,
+ "shadowSpread": 1,
+ "veilShowEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "closeButtonBackgroundColorRatios": [],
+ "scrollBarOpacity": 0.5,
+ "hideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "scrollBarVisible": "rollOver",
+ "headerVerticalAlign": "middle",
+ "bodyBorderSize": 0,
+ "verticalAlign": "middle",
+ "titlePaddingTop": 5,
+ "headerPaddingRight": 10,
+ "bodyPaddingTop": 5,
+ "backgroundColorDirection": "vertical",
+ "titlePaddingRight": 5,
+ "bodyPaddingBottom": 5,
+ "scrollBarMargin": 2,
+ "titlePaddingLeft": 5,
+ "headerBorderColor": "#000000",
+ "headerPaddingLeft": 10,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "headerBorderSize": 0,
+ "titleTextDecoration": "none",
+ "bodyPaddingLeft": 5,
+ "headerBackgroundOpacity": 1,
+ "titleFontWeight": "bold",
+ "layout": "vertical",
+ "paddingTop": 0,
+ "closeButtonBorderRadius": 11,
+ "closeButtonBackgroundColor": [],
+ "shadowHorizontalLength": 3,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ]
 },
 {
  "maxHeight": 60,
@@ -3036,159 +2863,32 @@
  "hfov": 2.85
 },
 {
- "data": {
-  "name": "Window86764"
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_EB8098C1_FC44_D6AD_41E3_B65A5B73C6B1",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_EB8098C1_FC44_D6AD_41E3_B65A5B73C6B1_0_1.jpg",
+    "width": 791,
+    "class": "ImageResourceLevel",
+    "height": 1024
+   }
+  ]
  },
- "id": "window_D3C16EC1_FC5C_AAAD_41E2_F0C2F133CC0A",
- "paddingLeft": 0,
- "shadowVerticalLength": 0,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 800,
- "scrollBarColor": "#000000",
- "gap": 10,
- "veilOpacity": 0.4,
- "minHeight": 20,
- "closeButtonIconHeight": 12,
- "overflow": "scroll",
- "closeButtonIconWidth": 12,
- "horizontalAlign": "center",
- "borderSize": 0,
- "modal": true,
- "titleFontStyle": "normal",
- "closeButtonIconLineWidth": 2,
- "height": 800,
- "propagateClick": false,
- "showEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "minWidth": 20,
- "titleFontFamily": "Arial",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "class": "Window",
- "backgroundColor": [],
- "headerPaddingBottom": 10,
- "veilColorRatios": [
-  0,
-  1
- ],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "closeButtonPressedIconColor": "#FFFFFF",
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "contentOpaque": false,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "title": "El Museo",
- "bodyBorderColor": "#000000",
- "backgroundOpacity": 1,
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "bodyBackgroundOpacity": 1,
- "shadow": true,
- "veilColorDirection": "horizontal",
- "headerPaddingTop": 10,
- "borderRadius": 5,
- "scrollBarWidth": 10,
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "titlePaddingBottom": 5,
- "closeButtonIconColor": "#000000",
- "closeButtonRollOverIconColor": "#FFFFFF",
- "backgroundColorRatios": [],
- "children": [
-  "this.htmlText_D3C32EC1_FC5C_AAAD_41EE_DA3EBCAE05CE"
- ],
- "paddingRight": 0,
- "titleFontSize": "2.22vmin",
- "shadowColor": "#000000",
- "shadowBlurRadius": 6,
- "bodyBackgroundColorDirection": "vertical",
- "footerBackgroundColorDirection": "vertical",
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "headerBackgroundColorDirection": "vertical",
- "titleFontColor": "#000000",
- "footerHeight": 5,
- "bodyPaddingRight": 5,
- "veilHideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "shadowOpacity": 0.5,
- "paddingBottom": 0,
- "shadowSpread": 1,
- "veilShowEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "closeButtonBackgroundColorRatios": [],
- "scrollBarOpacity": 0.5,
- "hideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "scrollBarVisible": "rollOver",
- "headerVerticalAlign": "middle",
- "bodyBorderSize": 0,
- "verticalAlign": "middle",
- "titlePaddingTop": 5,
- "headerPaddingRight": 10,
- "bodyPaddingTop": 5,
- "backgroundColorDirection": "vertical",
- "titlePaddingRight": 5,
- "bodyPaddingBottom": 5,
- "scrollBarMargin": 2,
- "titlePaddingLeft": 5,
- "headerBorderColor": "#000000",
- "headerPaddingLeft": 10,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "headerBorderSize": 0,
- "titleTextDecoration": "none",
- "bodyPaddingLeft": 5,
- "headerBackgroundOpacity": 1,
- "titleFontWeight": "bold",
- "layout": "vertical",
- "paddingTop": 0,
- "closeButtonBorderRadius": 11,
- "closeButtonBackgroundColor": [],
- "shadowHorizontalLength": 3,
- "veilColor": [
-  "#000000",
-  "#000000"
- ]
+ "pitch": 13.09,
+ "showEasing": "cubic_in",
+ "yaw": 104.77,
+ "hfov": 2.49
 },
 {
  "initialPosition": {
@@ -3245,32 +2945,58 @@
  "height": 1586
 },
 {
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_D6531218_FCC5_B5DC_41E6_7A4F5E34C051",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_D6531218_FCC5_B5DC_41E6_7A4F5E34C051_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 682
-   }
-  ]
- },
- "pitch": -21.06,
- "showEasing": "cubic_in",
- "yaw": -88.37,
- "hfov": 4
+ "id": "ImageResource_D06366C5_FCC4_DAB5_41C2_4807A6D08E66",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 2683
+  },
+  {
+   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_1.jpg",
+   "width": 1465,
+   "class": "ImageResourceLevel",
+   "height": 2048
+  },
+  {
+   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_2.jpg",
+   "width": 732,
+   "class": "ImageResourceLevel",
+   "height": 1024
+  },
+  {
+   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_3.jpg",
+   "width": 366,
+   "class": "ImageResourceLevel",
+   "height": 512
+  }
+ ]
+},
+{
+ "id": "ImageResource_D215998F_FCFB_B6B5_41B1_A767589F3295",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1232
+  },
+  {
+   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 657
+  },
+  {
+   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 328
+  }
+ ]
 },
 {
  "rotationY": 0,
@@ -3279,7 +3005,7 @@
  "hideEasing": "cubic_out",
  "rotationZ": 0,
  "popupMaxWidth": "95%",
- "id": "popup_EB8098C1_FC44_D6AD_41E3_B65A5B73C6B1",
+ "id": "popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE",
  "showDuration": 500,
  "class": "PopupPanoramaOverlay",
  "popupMaxHeight": "95%",
@@ -3288,17 +3014,17 @@
   "class": "ImageResource",
   "levels": [
    {
-    "url": "media/popup_EB8098C1_FC44_D6AD_41E3_B65A5B73C6B1_0_1.jpg",
-    "width": 791,
+    "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_1.jpg",
+    "width": 1024,
     "class": "ImageResourceLevel",
-    "height": 1024
+    "height": 682
    }
   ]
  },
- "pitch": 13.09,
+ "pitch": -7.35,
  "showEasing": "cubic_in",
- "yaw": 104.77,
- "hfov": 2.49
+ "yaw": 107.45,
+ "hfov": 4.66
 },
 {
  "rotationY": 0,
@@ -3368,6 +3094,19 @@
  "data": {
   "name": "Container black"
  }
+},
+{
+ "initialPosition": {
+  "yaw": -0.13,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C82B1460_FC7D_5E6C_41E7_512094149D02",
+ "id": "camera_C82B0460_FC7D_5E6C_41ED_5C3A0A60EF9F",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "rotationY": 0,
@@ -3452,8 +3191,8 @@
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C1D64071_FC47_766C_41C5_390B5D766DC1",
- "id": "camera_C1D63071_FC47_766C_41EC_1730C21279FA",
+ "initialSequence": "this.sequence_C8DE7450_FC7D_5DAB_41E2_6FC7FE11B6E8",
+ "id": "camera_C8DE6450_FC7D_5DAB_41EE_7C8B1D12BE07",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
@@ -3477,13 +3216,13 @@
 },
 {
  "initialPosition": {
-  "yaw": 82.86,
+  "yaw": 146.99,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C192B01B_FC47_75DC_419C_3898AEBCF800",
- "id": "camera_C192901B_FC47_75DC_41EC_49E3887EBF5C",
+ "initialSequence": "this.sequence_C83CE488_FC7D_5EBC_41D5_F26FDF6A2AB1",
+ "id": "camera_C83CD488_FC7D_5EBC_41E6_C47F8B585D46",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
@@ -3556,19 +3295,6 @@
  "data": {
   "name": "--- LEFT PANEL 2"
  }
-},
-{
- "initialPosition": {
-  "yaw": 35.2,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_C0680FFB_FC47_6A5C_41E4_F725870C0935",
- "id": "camera_C068FFFB_FC47_6A5C_41B6_CA4D34364BFD",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
 },
 {
  "id": "ImageResource_D20A9980_FCFB_B6AB_41EF_08895B07724C",
@@ -3841,7 +3567,7 @@
    "class": "MapPlayListItem"
   }
  ],
- "id": "playList_C01E7F7A_FC47_6A5C_41ED_883775BE68A0",
+ "id": "playList_CF67835B_FC7D_5A5C_41D3_D1A149E5CF8A",
  "class": "PlayList"
 },
 {
@@ -3954,33 +3680,28 @@
 },
 {
  "initialPosition": {
-  "yaw": -45.92,
+  "yaw": 77.23,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C07BEFDC_FC47_6A5B_41DA_E33B214662F4",
- "id": "camera_C07BDFDC_FC47_6A5B_41E9_AC999D2BA679",
+ "initialSequence": "this.sequence_C89A83F2_FC7D_5A6C_41EF_5063F9953691",
+ "id": "camera_C89B63F2_FC7D_5A6C_41D9_4B9419388B1A",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
 {
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14",
- "class": "Photo",
- "width": 1920,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 2667
+ "touchControlMode": "drag_rotation",
+ "viewerArea": "this.MainViewer",
+ "buttonCardboardView": "this.IconButton_66589837_74AF_8B56_41D7_A6F4FAC02CC3",
+ "buttonToggleHotspots": "this.IconButton_6658F838_74AF_8B5A_41C1_8DA59962CFF4",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "buttonToggleGyroscope": "this.IconButton_6658D838_74AF_8B5A_41D7_154D466041BB",
+ "id": "MainViewerPanoramaPlayer",
+ "mouseControlMode": "drag_rotation",
+ "class": "PanoramaPlayer",
+ "displayPlaybackBar": true
 },
 {
  "id": "ImageResource_D01EC6C5_FCC4_DAB5_41D2_BEDD3EFF2D5E",
@@ -4048,28 +3769,21 @@
  ]
 },
 {
- "id": "ImageResource_D06776C0_FCC4_DAAB_41ED_0EC544568CBA",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1047
-  },
-  {
-   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 558
-  },
-  {
-   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 279
-  }
- ]
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14",
+ "class": "Photo",
+ "width": 1920,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_14.jpg",
+    "class": "ImageResourceLevel"
+   }
+  ]
+ },
+ "height": 2667
 },
 {
  "items": [
@@ -4161,104 +3875,17 @@
  "class": "PlayList"
 },
 {
- "movementMode": "constrained",
- "viewerArea": "this.MainViewer",
- "id": "MainViewerMapPlayer",
- "class": "MapPlayer"
-},
-{
- "scrollBarWidth": 10,
- "children": [
-  "this.Label_E1FF0DE4_FC3F_EE6B_41E7_703DE0A4CB5D",
-  "this.Label_E34C164A_FC3C_DDBF_41D7_A46B2B7A7A90"
- ],
- "scrollBarColor": "#000000",
- "left": "3.32%",
- "paddingLeft": 8,
- "id": "Container_E1FF2DE4_FC3F_EE6B_41EE_E6234BE03E97",
- "width": 564,
- "paddingRight": 0,
- "gap": 10,
- "minHeight": 1,
- "horizontalAlign": "left",
- "borderSize": 0,
- "overflow": "visible",
- "top": "2.57%",
- "minWidth": 1,
- "propagateClick": true,
- "paddingBottom": 0,
- "height": 110,
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "Container",
- "verticalAlign": "top",
- "creationPolicy": "inAdvance",
- "contentOpaque": false,
- "scrollBarMargin": 2,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "shadow": false,
- "layout": "absolute",
- "paddingTop": 0,
- "data": {
-  "name": "--STICKER"
- }
-},
-{
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_D4CF13B0_FCC5_7AEC_41E5_C36E081A226C",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_D4CF13B0_FCC5_7AEC_41E5_C36E081A226C_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 682
-   }
-  ]
+ "initialPosition": {
+  "yaw": 171.68,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
  },
- "pitch": 6.86,
- "showEasing": "cubic_in",
- "yaw": -86.84,
- "hfov": 4.25
-},
-{
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_EAAF666E_FC3C_DA74_41CD_B526BC61A959",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_EAAF666E_FC3C_DA74_41CD_B526BC61A959_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 914
-   }
-  ]
- },
- "pitch": 2.36,
- "showEasing": "cubic_in",
- "yaw": -66.93,
- "hfov": 2.56
+ "initialSequence": "this.sequence_C8376473_FC7D_5E6D_41EF_3E0DCFC38214",
+ "id": "camera_C8375472_FC7D_5E6F_41E8_D8A3368B86D5",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "rotationY": 0,
@@ -4289,132 +3916,10 @@
  "hfov": 2.58
 },
 {
- "textDecoration": "none",
- "fontFamily": "Cinzel Bold",
- "id": "Label_E1FF0DE4_FC3F_EE6B_41E7_703DE0A4CB5D",
- "left": 0,
- "paddingLeft": 5,
- "fontColor": "#FFFFFF",
- "paddingRight": 0,
- "textShadowVerticalLength": 0,
- "width": 250,
- "textShadowHorizontalLength": 0,
- "minHeight": 1,
- "text": "MUSEO",
- "horizontalAlign": "center",
- "top": 5,
- "borderSize": 0,
- "minWidth": 1,
- "propagateClick": true,
- "textShadowBlurRadius": 10,
- "paddingBottom": 0,
- "height": 65,
- "verticalAlign": "top",
- "class": "Label",
- "fontSize": "50px",
- "fontStyle": "normal",
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "textShadowOpacity": 1,
  "data": {
-  "name": "text 1"
+  "name": "Window82758"
  },
- "shadow": false,
- "fontWeight": "bold",
- "paddingTop": 5,
- "textShadowColor": "#000000"
-},
-{
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_E8A86492_FC4D_FEAF_41E1_C8A58FBAC232",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_E8A86492_FC4D_FEAF_41E1_C8A58FBAC232_0_1.jpg",
-    "width": 811,
-    "class": "ImageResourceLevel",
-    "height": 1024
-   }
-  ]
- },
- "pitch": 23.84,
- "showEasing": "cubic_in",
- "yaw": 0.31,
- "hfov": 3.1
-},
-{
- "id": "ImageResource_D06366C5_FCC4_DAB5_41C2_4807A6D08E66",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 2683
-  },
-  {
-   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_1.jpg",
-   "width": 1465,
-   "class": "ImageResourceLevel",
-   "height": 2048
-  },
-  {
-   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_2.jpg",
-   "width": 732,
-   "class": "ImageResourceLevel",
-   "height": 1024
-  },
-  {
-   "url": "media/popup_E3ADDDA5_FCCC_AEF5_41E6_F34237C86117_0_3.jpg",
-   "width": 366,
-   "class": "ImageResourceLevel",
-   "height": 512
-  }
- ]
-},
-{
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_D5750800_FCCC_F5AC_41C7_52033C261DF8",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_D5750800_FCCC_F5AC_41C7_52033C261DF8_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 336
-   }
-  ]
- },
- "pitch": 3.12,
- "showEasing": "cubic_in",
- "yaw": 62.34,
- "hfov": 3.42
-},
-{
- "data": {
-  "name": "Window77130"
- },
- "id": "window_D7746462_FC4C_FE6C_41EC_30C69A2FEB7E",
+ "id": "window_D11C524B_FC45_F5BC_41ED_81082A117B99",
  "paddingLeft": 0,
  "shadowVerticalLength": 0,
  "closeButtonRollOverBackgroundColorRatios": [
@@ -4474,7 +3979,7 @@
   "#DDDDDD",
   "#FFFFFF"
  ],
- "title": "Pr\u00f3ceres de la Independencia",
+ "title": "Historia",
  "bodyBorderColor": "#000000",
  "backgroundOpacity": 1,
  "headerBackgroundColorRatios": [
@@ -4498,10 +4003,10 @@
  "closeButtonRollOverIconColor": "#FFFFFF",
  "backgroundColorRatios": [],
  "children": [
-  "this.htmlText_D7765463_FC4C_FE6C_41DB_2635E370BDED"
+  "this.htmlText_D11FE24B_FC45_F5BC_41DC_24D876169B31"
  ],
  "paddingRight": 0,
- "titleFontSize": "2.22vmin",
+ "titleFontSize": "18px",
  "shadowColor": "#000000",
  "shadowBlurRadius": 6,
  "bodyBackgroundColorDirection": "vertical",
@@ -4566,30 +4071,406 @@
  ]
 },
 {
+ "id": "ImageResource_D06776C0_FCC4_DAAB_41ED_0EC544568CBA",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1047
+  },
+  {
+   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 558
+  },
+  {
+   "url": "media/popup_E97D06B6_FC5D_5AD4_41C9_9A4C68CFBE05_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 279
+  }
+ ]
+},
+{
+ "data": {
+  "name": "Window78461"
+ },
+ "id": "window_D001FBF7_FC4F_6A54_41DA_493ED2234296",
+ "paddingLeft": 0,
+ "shadowVerticalLength": 0,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 800,
+ "scrollBarColor": "#000000",
+ "gap": 10,
+ "veilOpacity": 0.4,
+ "minHeight": 20,
+ "closeButtonIconHeight": 12,
+ "overflow": "scroll",
+ "closeButtonIconWidth": 12,
+ "horizontalAlign": "center",
+ "borderSize": 0,
+ "modal": true,
+ "titleFontStyle": "normal",
+ "closeButtonIconLineWidth": 2,
+ "height": 800,
+ "propagateClick": false,
+ "showEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "minWidth": 20,
+ "titleFontFamily": "Arial",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "class": "Window",
+ "backgroundColor": [],
+ "headerPaddingBottom": 10,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "contentOpaque": false,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "title": "Adquisici\u00f3n y Restauraci\u00f3n",
+ "bodyBorderColor": "#000000",
+ "backgroundOpacity": 1,
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "bodyBackgroundOpacity": 1,
+ "shadow": true,
+ "veilColorDirection": "horizontal",
+ "headerPaddingTop": 10,
+ "borderRadius": 5,
+ "scrollBarWidth": 10,
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "titlePaddingBottom": 5,
+ "closeButtonIconColor": "#000000",
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "backgroundColorRatios": [],
+ "children": [
+  "this.htmlText_D007ABF7_FC4F_6A54_4187_A042DBA2B2B1"
+ ],
+ "paddingRight": 0,
+ "titleFontSize": "18px",
+ "shadowColor": "#000000",
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColorDirection": "vertical",
+ "footerBackgroundColorDirection": "vertical",
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontColor": "#000000",
+ "footerHeight": 5,
+ "bodyPaddingRight": 5,
+ "veilHideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "shadowOpacity": 0.5,
+ "paddingBottom": 0,
+ "shadowSpread": 1,
+ "veilShowEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "closeButtonBackgroundColorRatios": [],
+ "scrollBarOpacity": 0.5,
+ "hideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "scrollBarVisible": "rollOver",
+ "headerVerticalAlign": "middle",
+ "bodyBorderSize": 0,
+ "verticalAlign": "middle",
+ "titlePaddingTop": 5,
+ "headerPaddingRight": 10,
+ "bodyPaddingTop": 5,
+ "backgroundColorDirection": "vertical",
+ "titlePaddingRight": 5,
+ "bodyPaddingBottom": 5,
+ "scrollBarMargin": 2,
+ "titlePaddingLeft": 5,
+ "headerBorderColor": "#000000",
+ "headerPaddingLeft": 10,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "headerBorderSize": 0,
+ "titleTextDecoration": "none",
+ "bodyPaddingLeft": 5,
+ "headerBackgroundOpacity": 1,
+ "titleFontWeight": "bold",
+ "layout": "vertical",
+ "paddingTop": 0,
+ "closeButtonBorderRadius": 11,
+ "closeButtonBackgroundColor": [],
+ "shadowHorizontalLength": 3,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ]
+},
+{
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_EAAF666E_FC3C_DA74_41CD_B526BC61A959",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_EAAF666E_FC3C_DA74_41CD_B526BC61A959_0_1.jpg",
+    "width": 1024,
+    "class": "ImageResourceLevel",
+    "height": 914
+   }
+  ]
+ },
+ "pitch": 2.36,
+ "showEasing": "cubic_in",
+ "yaw": -66.93,
+ "hfov": 2.56
+},
+{
  "initialPosition": {
-  "yaw": 0,
+  "yaw": -110.7,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_F6CDB9A7_FBDD_B6F4_41EE_A2EFA05EC171",
- "id": "panorama_F6C6D406_FBDC_DDB4_41D2_0FEFE280BB0C_camera",
+ "initialSequence": "this.sequence_C8F95422_FC7D_5DEF_41DD_2821F35B16ED",
+ "id": "camera_C8F94422_FC7D_5DEF_41D0_2243930AD35B",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
 },
 {
- "initialPosition": {
-  "yaw": 77.23,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "scrollBarWidth": 10,
+ "children": [
+  "this.Label_E1FF0DE4_FC3F_EE6B_41E7_703DE0A4CB5D",
+  "this.Label_E34C164A_FC3C_DDBF_41D7_A46B2B7A7A90"
+ ],
+ "scrollBarColor": "#000000",
+ "left": "3.32%",
+ "paddingLeft": 8,
+ "id": "Container_E1FF2DE4_FC3F_EE6B_41EE_E6234BE03E97",
+ "width": 564,
+ "paddingRight": 0,
+ "gap": 10,
+ "minHeight": 1,
+ "horizontalAlign": "left",
+ "borderSize": 0,
+ "overflow": "visible",
+ "top": "2.57%",
+ "minWidth": 1,
+ "propagateClick": true,
+ "paddingBottom": 0,
+ "height": 110,
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "Container",
+ "verticalAlign": "top",
+ "creationPolicy": "inAdvance",
+ "contentOpaque": false,
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "shadow": false,
+ "layout": "absolute",
+ "paddingTop": 0,
+ "data": {
+  "name": "--STICKER"
+ }
+},
+{
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_E8A86492_FC4D_FEAF_41E1_C8A58FBAC232",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_E8A86492_FC4D_FEAF_41E1_C8A58FBAC232_0_1.jpg",
+    "width": 811,
+    "class": "ImageResourceLevel",
+    "height": 1024
+   }
+  ]
  },
- "initialSequence": "this.sequence_C19E900C_FC47_75BB_41C1_B3AE4CA471C6",
- "id": "camera_C061600C_FC47_75BB_41DA_C62B847BD883",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
+ "pitch": 23.84,
+ "showEasing": "cubic_in",
+ "yaw": 0.31,
+ "hfov": 3.1
+},
+{
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_D4CF13B0_FCC5_7AEC_41E5_C36E081A226C",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_D4CF13B0_FCC5_7AEC_41E5_C36E081A226C_0_1.jpg",
+    "width": 1024,
+    "class": "ImageResourceLevel",
+    "height": 682
+   }
+  ]
+ },
+ "pitch": 6.86,
+ "showEasing": "cubic_in",
+ "yaw": -86.84,
+ "hfov": 4.25
+},
+{
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_D5750800_FCCC_F5AC_41C7_52033C261DF8",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_D5750800_FCCC_F5AC_41C7_52033C261DF8_0_1.jpg",
+    "width": 1024,
+    "class": "ImageResourceLevel",
+    "height": 336
+   }
+  ]
+ },
+ "pitch": 3.12,
+ "showEasing": "cubic_in",
+ "yaw": 62.34,
+ "hfov": 3.42
+},
+{
+ "id": "ImageResource_C851744A_FCC4_DDBF_41A9_2D4EA208A173",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1280
+  },
+  {
+   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 682
+  },
+  {
+   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 341
+  }
+ ]
+},
+{
+ "textDecoration": "none",
+ "fontFamily": "Cinzel Bold",
+ "id": "Label_E1FF0DE4_FC3F_EE6B_41E7_703DE0A4CB5D",
+ "left": 0,
+ "paddingLeft": 5,
+ "fontColor": "#FFFFFF",
+ "paddingRight": 0,
+ "textShadowVerticalLength": 0,
+ "width": 250,
+ "textShadowHorizontalLength": 0,
+ "minHeight": 1,
+ "text": "MUSEO",
+ "horizontalAlign": "center",
+ "top": 5,
+ "borderSize": 0,
+ "minWidth": 1,
+ "propagateClick": true,
+ "textShadowBlurRadius": 10,
+ "paddingBottom": 0,
+ "height": 65,
+ "verticalAlign": "top",
+ "class": "Label",
+ "fontSize": "50px",
+ "fontStyle": "normal",
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "textShadowOpacity": 1,
+ "data": {
+  "name": "text 1"
+ },
+ "shadow": false,
+ "fontWeight": "bold",
+ "paddingTop": 5,
+ "textShadowColor": "#000000"
 },
 {
  "label": "Sala 2 - Comedor",
@@ -4942,28 +4823,32 @@
  "maxWidth": 60
 },
 {
- "id": "ImageResource_C851744A_FCC4_DDBF_41A9_2D4EA208A173",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1280
-  },
-  {
-   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 682
-  },
-  {
-   "url": "media/popup_D49F1BA3_FCC5_AAEC_41A6_6A89CD8AB21F_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 341
-  }
- ]
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_DC446CB1_FCCC_AEED_41BC_38524039B807",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_DC446CB1_FCCC_AEED_41BC_38524039B807_0_1.jpg",
+    "width": 1024,
+    "class": "ImageResourceLevel",
+    "height": 692
+   }
+  ]
+ },
+ "pitch": 7.18,
+ "showEasing": "cubic_in",
+ "yaw": 56.06,
+ "hfov": 3.75
 },
 {
  "children": [
@@ -5018,31 +4903,14 @@
  }
 },
 {
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39",
- "class": "Photo",
- "width": 1920,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 1047
-},
-{
  "initialPosition": {
-  "yaw": -17.77,
+  "yaw": 0,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C0727FEB_FC47_6A7C_41E6_AAD408F4BEB2",
- "id": "camera_C0726FEB_FC47_6A7C_41E0_F0D36C23C9C8",
+ "initialSequence": "this.sequence_F6CDB9A7_FBDD_B6F4_41EE_A2EFA05EC171",
+ "id": "panorama_F6C6D406_FBDC_DDB4_41D2_0FEFE280BB0C_camera",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
@@ -5134,56 +5002,21 @@
  "automaticZoomSpeed": 10
 },
 {
- "initialPosition": {
-  "yaw": 171.68,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39",
+ "class": "Photo",
+ "width": 1920,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_39.jpg",
+    "class": "ImageResourceLevel"
+   }
+  ]
  },
- "initialSequence": "this.sequence_C1FE6090_FC47_76AC_41DD_54F914FAAAF1",
- "id": "camera_C1FE4090_FC47_76AC_41D6_887DB1530097",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
- "children": [
-  "this.IconButton_66589837_74AF_8B56_41D7_A6F4FAC02CC3",
-  "this.IconButton_6658E837_74AF_8B56_41B5_2A29A6498E57",
-  "this.IconButton_6658F838_74AF_8B5A_41C1_8DA59962CFF4",
-  "this.IconButton_6658C838_74AF_8B5A_418E_C797984D8CAE",
-  "this.IconButton_6658D838_74AF_8B5A_41D7_154D466041BB"
- ],
- "scrollBarColor": "#000000",
- "paddingLeft": 0,
- "id": "Container_66588837_74AF_8B56_41CA_E204728E8E6C",
- "width": "100%",
- "paddingRight": 0,
- "gap": 16,
- "minHeight": 1,
- "horizontalAlign": "left",
- "borderSize": 0,
- "minWidth": 1,
- "propagateClick": false,
- "paddingBottom": 0,
- "height": 40,
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "Container",
- "verticalAlign": "middle",
- "creationPolicy": "inAdvance",
- "contentOpaque": false,
- "scrollBarMargin": 2,
- "backgroundOpacity": 0,
- "shadow": false,
- "overflow": "scroll",
- "borderRadius": 0,
- "layout": "horizontal",
- "paddingTop": 0,
- "scrollBarWidth": 10,
- "data": {
-  "name": "-Container settings"
- }
+ "height": 1047
 },
 {
  "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_33_t.jpg",
@@ -5251,28 +5084,67 @@
  ]
 },
 {
- "viewerArea": "this.MainViewer",
- "id": "MainViewerPhotoAlbumPlayer",
- "buttonPrevious": "this.IconButton_2A19BC4C_0D3B_DFF0_419F_D0DCB12FF482",
- "class": "PhotoAlbumPlayer",
- "buttonNext": "this.IconButton_2A19AC4C_0D3B_DFF0_4181_A2C230C2E510"
+ "id": "ImageResource_D079F6B1_FCC4_DAED_41DA_419704438EB5",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1280
+  },
+  {
+   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 682
+  },
+  {
+   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 341
+  }
+ ]
 },
 {
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27",
- "class": "Photo",
- "width": 1521,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 1920
+ "children": [
+  "this.IconButton_66589837_74AF_8B56_41D7_A6F4FAC02CC3",
+  "this.IconButton_6658E837_74AF_8B56_41B5_2A29A6498E57",
+  "this.IconButton_6658F838_74AF_8B5A_41C1_8DA59962CFF4",
+  "this.IconButton_6658C838_74AF_8B5A_418E_C797984D8CAE",
+  "this.IconButton_6658D838_74AF_8B5A_41D7_154D466041BB"
+ ],
+ "scrollBarColor": "#000000",
+ "paddingLeft": 0,
+ "id": "Container_66588837_74AF_8B56_41CA_E204728E8E6C",
+ "width": "100%",
+ "paddingRight": 0,
+ "gap": 16,
+ "minHeight": 1,
+ "horizontalAlign": "left",
+ "borderSize": 0,
+ "minWidth": 1,
+ "propagateClick": false,
+ "paddingBottom": 0,
+ "height": 40,
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "Container",
+ "verticalAlign": "middle",
+ "creationPolicy": "inAdvance",
+ "contentOpaque": false,
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0,
+ "shadow": false,
+ "overflow": "scroll",
+ "borderRadius": 0,
+ "layout": "horizontal",
+ "paddingTop": 0,
+ "scrollBarWidth": 10,
+ "data": {
+  "name": "-Container settings"
+ }
 },
 {
  "initialPosition": {
@@ -5340,30 +5212,6 @@
  "showEasing": "cubic_in",
  "yaw": 125.36,
  "hfov": 4.55
-},
-{
- "id": "ImageResource_D079F6B1_FCC4_DAED_41DA_419704438EB5",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1280
-  },
-  {
-   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 682
-  },
-  {
-   "url": "media/popup_E951D931_FC45_77ED_41EC_7872266B5F5A_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 341
-  }
- ]
 },
 {
  "label": "Sala 6 - Sal\u00f3n Capitular - Punto 2",
@@ -5688,16 +5536,16 @@
  ]
 },
 {
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26_t.jpg",
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27_t.jpg",
  "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26",
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27",
  "class": "Photo",
  "width": 1521,
  "image": {
   "class": "ImageResource",
   "levels": [
    {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26.jpg",
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_27.jpg",
     "class": "ImageResourceLevel"
    }
   ]
@@ -6050,19 +5898,6 @@
  ]
 },
 {
- "initialPosition": {
-  "yaw": -73.94,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_C1865032_FC47_75EF_41EC_A31140DA7C74",
- "id": "camera_C1862032_FC47_75EF_41D0_096CB9BF3219",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
  "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_32_t.jpg",
  "duration": 5000,
  "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_32",
@@ -6097,17 +5932,21 @@
  "height": 916
 },
 {
- "initialPosition": {
-  "yaw": 0,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26",
+ "class": "Photo",
+ "width": 1521,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_26.jpg",
+    "class": "ImageResourceLevel"
+   }
+  ]
  },
- "initialSequence": "this.sequence_F70949A9_FBDD_B6FC_41DA_D4A831467966",
- "id": "panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151_camera",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
+ "height": 1920
 },
 {
  "id": "ImageResource_D06E76BB_FCC4_DADD_41D5_5E2D712AD21A",
@@ -6227,41 +6066,17 @@
  ]
 },
 {
- "scrollBarWidth": 10,
- "children": [
-  "this.IconButton_221B2648_0C06_E5FD_41A6_F9E27CDB95AF"
- ],
- "id": "Container_221B3648_0C06_E5FD_4199_FCE031AE003B",
- "left": "15%",
- "paddingLeft": 0,
- "paddingRight": 20,
- "right": "15%",
- "gap": 10,
- "minHeight": 1,
- "horizontalAlign": "right",
- "borderSize": 0,
- "scrollBarColor": "#000000",
- "top": "10%",
- "bottom": "80%",
- "minWidth": 1,
- "propagateClick": false,
- "paddingBottom": 0,
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "Container",
- "verticalAlign": "top",
- "creationPolicy": "inAdvance",
- "contentOpaque": false,
- "scrollBarMargin": 2,
- "backgroundOpacity": 0,
- "borderRadius": 0,
- "overflow": "visible",
- "shadow": false,
- "layout": "vertical",
- "paddingTop": 20,
- "data": {
-  "name": "Container X global"
- }
+ "initialPosition": {
+  "yaw": 0,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_F70949A9_FBDD_B6FC_41DA_D4A831467966",
+ "id": "panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151_camera",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "rotationY": 0,
@@ -6357,6 +6172,19 @@
  "showEasing": "cubic_in",
  "yaw": -108.74,
  "hfov": 1.89
+},
+{
+ "initialPosition": {
+  "yaw": 151.83,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C8C49432_FC7D_5DEF_41EE_3C30903796DE",
+ "id": "camera_C8C48432_FC7D_5DEF_41EB_91F34A4DC04D",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "label": "Sala 4 - Habitaci\u00f3n",
@@ -6748,34 +6576,6 @@
  "height": 2852
 },
 {
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_DC446CB1_FCCC_AEED_41BC_38524039B807",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/popup_DC446CB1_FCCC_AEED_41BC_38524039B807_0_1.jpg",
-    "width": 1024,
-    "class": "ImageResourceLevel",
-    "height": 692
-   }
-  ]
- },
- "pitch": 7.18,
- "showEasing": "cubic_in",
- "yaw": 56.06,
- "hfov": 3.75
-},
-{
  "children": [
   "this.Container_7DB2F382_7065_343F_41C8_85C6AE9C717F",
   "this.Container_66588837_74AF_8B56_41CA_E204728E8E6C",
@@ -6924,6 +6724,19 @@
   ]
  },
  "height": 1715
+},
+{
+ "initialPosition": {
+  "yaw": 35.2,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C892D3E1_FC7D_5A6D_41E1_2F58F66E861E",
+ "id": "camera_C892B3E1_FC7D_5A6D_41CA_4CC0E21A6D0A",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "scrollBarWidth": 10,
@@ -7910,28 +7723,41 @@
  }
 },
 {
- "id": "ImageResource_D01DA6C5_FCC4_DAB5_41D4_9938C9AA8CDE",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1232
-  },
-  {
-   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 657
-  },
-  {
-   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 328
-  }
- ]
+ "scrollBarWidth": 10,
+ "children": [
+  "this.IconButton_221B2648_0C06_E5FD_41A6_F9E27CDB95AF"
+ ],
+ "id": "Container_221B3648_0C06_E5FD_4199_FCE031AE003B",
+ "left": "15%",
+ "paddingLeft": 0,
+ "paddingRight": 20,
+ "right": "15%",
+ "gap": 10,
+ "minHeight": 1,
+ "horizontalAlign": "right",
+ "borderSize": 0,
+ "scrollBarColor": "#000000",
+ "top": "10%",
+ "bottom": "80%",
+ "minWidth": 1,
+ "propagateClick": false,
+ "paddingBottom": 0,
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "Container",
+ "verticalAlign": "top",
+ "creationPolicy": "inAdvance",
+ "contentOpaque": false,
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0,
+ "borderRadius": 0,
+ "overflow": "visible",
+ "shadow": false,
+ "layout": "vertical",
+ "paddingTop": 20,
+ "data": {
+  "name": "Container X global"
+ }
 },
 {
  "id": "ImageResource_C850544C_FCC4_DDB4_41EE_9A844C2BCEDB",
@@ -8077,6 +7903,43 @@
  "height": 1320
 },
 {
+ "initialPosition": {
+  "yaw": -73.94,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C8F3C413_FC7D_5DAC_41B9_BB9420097891",
+ "id": "camera_C8F3B413_FC7D_5DAC_41C1_31A984A45FD9",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
+},
+{
+ "id": "ImageResource_D01DA6C5_FCC4_DAB5_41D4_9938C9AA8CDE",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1232
+  },
+  {
+   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 657
+  },
+  {
+   "url": "media/popup_E33285D5_FCCF_5E55_41ED_476D2B398123_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 328
+  }
+ ]
+},
+{
  "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_35_t.jpg",
  "duration": 5000,
  "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_35",
@@ -8190,19 +8053,6 @@
    "height": 413
   }
  ]
-},
-{
- "initialPosition": {
-  "yaw": -110.7,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_C1BD5042_FC47_75AC_41E3_075C03C39316",
- "id": "camera_C1BD3042_FC47_75AC_41ED_F7D4074FFA0A",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
 },
 {
  "maxHeight": 1095,
@@ -8345,13 +8195,13 @@
 },
 {
  "initialPosition": {
-  "yaw": 151.83,
+  "yaw": 165.68,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C1AE0052_FC47_75AF_41A6_9824511FE392",
- "id": "camera_C1AEE052_FC47_75AF_41E1_94394FF14F25",
+ "initialSequence": "this.sequence_C8BA63AB_FC7D_5AFD_41EA_985D9032035B",
+ "id": "camera_C8BA33AB_FC7D_5AFD_41D9_D5FF679F2BFC",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
@@ -8385,19 +8235,6 @@
  "backgroundColorRatios": [
   0
  ]
-},
-{
- "initialPosition": {
-  "yaw": -0.13,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_C1CAB081_FC47_76AD_41D6_E1DAC1244F1E",
- "id": "camera_C1CA9081_FC47_76AD_41DE_D771CF119BAD",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
 },
 {
  "id": "ImageResource_D041D6AC_FCC4_DAFB_41C5_C9147D029965",
@@ -8608,6 +8445,161 @@
  "showEasing": "cubic_in",
  "yaw": 94.26,
  "hfov": 2.41
+},
+{
+ "data": {
+  "name": "Window77130"
+ },
+ "id": "window_D7746462_FC4C_FE6C_41EC_30C69A2FEB7E",
+ "paddingLeft": 0,
+ "shadowVerticalLength": 0,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 800,
+ "scrollBarColor": "#000000",
+ "gap": 10,
+ "veilOpacity": 0.4,
+ "minHeight": 20,
+ "closeButtonIconHeight": 12,
+ "overflow": "scroll",
+ "closeButtonIconWidth": 12,
+ "horizontalAlign": "center",
+ "borderSize": 0,
+ "modal": true,
+ "titleFontStyle": "normal",
+ "closeButtonIconLineWidth": 2,
+ "height": 800,
+ "propagateClick": false,
+ "showEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "minWidth": 20,
+ "titleFontFamily": "Arial",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "class": "Window",
+ "backgroundColor": [],
+ "headerPaddingBottom": 10,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "contentOpaque": false,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "title": "Pr\u00f3ceres de la Independencia",
+ "bodyBorderColor": "#000000",
+ "backgroundOpacity": 1,
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "bodyBackgroundOpacity": 1,
+ "shadow": true,
+ "veilColorDirection": "horizontal",
+ "headerPaddingTop": 10,
+ "borderRadius": 5,
+ "scrollBarWidth": 10,
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "titlePaddingBottom": 5,
+ "closeButtonIconColor": "#000000",
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "backgroundColorRatios": [],
+ "children": [
+  "this.htmlText_D7765463_FC4C_FE6C_41DB_2635E370BDED"
+ ],
+ "paddingRight": 0,
+ "titleFontSize": "18px",
+ "shadowColor": "#000000",
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColorDirection": "vertical",
+ "footerBackgroundColorDirection": "vertical",
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "headerBackgroundColorDirection": "vertical",
+ "titleFontColor": "#000000",
+ "footerHeight": 5,
+ "bodyPaddingRight": 5,
+ "veilHideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "shadowOpacity": 0.5,
+ "paddingBottom": 0,
+ "shadowSpread": 1,
+ "veilShowEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "closeButtonBackgroundColorRatios": [],
+ "scrollBarOpacity": 0.5,
+ "hideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "scrollBarVisible": "rollOver",
+ "headerVerticalAlign": "middle",
+ "bodyBorderSize": 0,
+ "verticalAlign": "middle",
+ "titlePaddingTop": 5,
+ "headerPaddingRight": 10,
+ "bodyPaddingTop": 5,
+ "backgroundColorDirection": "vertical",
+ "titlePaddingRight": 5,
+ "bodyPaddingBottom": 5,
+ "scrollBarMargin": 2,
+ "titlePaddingLeft": 5,
+ "headerBorderColor": "#000000",
+ "headerPaddingLeft": 10,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "headerBorderSize": 0,
+ "titleTextDecoration": "none",
+ "bodyPaddingLeft": 5,
+ "headerBackgroundOpacity": 1,
+ "titleFontWeight": "bold",
+ "layout": "vertical",
+ "paddingTop": 0,
+ "closeButtonBorderRadius": 11,
+ "closeButtonBackgroundColor": [],
+ "shadowHorizontalLength": 3,
+ "veilColor": [
+  "#000000",
+  "#000000"
+ ]
 },
 {
  "id": "ImageResource_D069B6BB_FCC4_DADD_41C7_7B1C09894D4A",
@@ -9106,16 +9098,28 @@
  "height": 1490
 },
 {
- "touchControlMode": "drag_rotation",
- "viewerArea": "this.MainViewer",
- "buttonCardboardView": "this.IconButton_66589837_74AF_8B56_41D7_A6F4FAC02CC3",
- "buttonToggleHotspots": "this.IconButton_6658F838_74AF_8B5A_41C1_8DA59962CFF4",
- "gyroscopeVerticalDraggingEnabled": true,
- "buttonToggleGyroscope": "this.IconButton_6658D838_74AF_8B5A_41D7_154D466041BB",
- "id": "MainViewerPanoramaPlayer",
- "mouseControlMode": "drag_rotation",
- "class": "PanoramaPlayer",
- "displayPlaybackBar": true
+ "id": "ImageResource_D042D6A7_FCC4_DAF5_41CC_23A90E02F5A7",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1515
+  },
+  {
+   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 808
+  },
+  {
+   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 404
+  }
+ ]
 },
 {
  "rotationY": 0,
@@ -9199,39 +9203,26 @@
  "maxWidth": 60
 },
 {
- "initialPosition": {
-  "yaw": -115.48,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_C1A55061_FC47_766C_41C1_5DB3316AA6A1",
- "id": "camera_C1A53061_FC47_766C_41E3_DF1F36A690E4",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
- "id": "ImageResource_D042D6A7_FCC4_DAF5_41CC_23A90E02F5A7",
+ "id": "ImageResource_D06F76BB_FCC4_DADD_41ED_91811EA90AC4",
  "class": "ImageResource",
  "levels": [
   {
-   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_0.jpg",
-   "width": 1920,
+   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_0.jpg",
+   "width": 1494,
    "class": "ImageResourceLevel",
-   "height": 1515
+   "height": 1920
   },
   {
-   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_1.jpg",
-   "width": 1024,
+   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_1.jpg",
+   "width": 796,
    "class": "ImageResourceLevel",
-   "height": 808
+   "height": 1024
   },
   {
-   "url": "media/popup_EEFDAC74_FC3C_AE6B_41AF_1D91D7E2AA33_0_2.jpg",
-   "width": 512,
+   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_2.jpg",
+   "width": 398,
    "class": "ImageResourceLevel",
-   "height": 404
+   "height": 512
   }
  ]
 },
@@ -9350,43 +9341,6 @@
  "data": {
   "name": "Global"
  }
-},
-{
- "initialPosition": {
-  "yaw": 146.99,
-  "hfov": 80,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "initialSequence": "this.sequence_D2EC41BD_FC47_76D5_41E6_9AC409547A8B",
- "id": "camera_D2EC51BD_FC47_76D5_41E4_CE060FAF2F32",
- "manualZoomSpeed": 2,
- "class": "PanoramaCamera",
- "automaticZoomSpeed": 10
-},
-{
- "id": "ImageResource_D06F76BB_FCC4_DADD_41ED_91811EA90AC4",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_0.jpg",
-   "width": 1494,
-   "class": "ImageResourceLevel",
-   "height": 1920
-  },
-  {
-   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_1.jpg",
-   "width": 796,
-   "class": "ImageResourceLevel",
-   "height": 1024
-  },
-  {
-   "url": "media/popup_EB20CD73_FC4B_EE6C_41EC_8DA422FC0209_0_2.jpg",
-   "width": 398,
-   "class": "ImageResourceLevel",
-   "height": 512
-  }
- ]
 },
 {
  "rotationY": 0,
@@ -9515,13 +9469,13 @@
 },
 {
  "initialPosition": {
-  "yaw": 165.68,
+  "yaw": -45.92,
   "hfov": 80,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
- "initialSequence": "this.sequence_C0422FCC_FC47_6AB4_41E3_E3FE3345CA56",
- "id": "camera_C0421FCC_FC47_6AB4_41EA_CE8A5816C369",
+ "initialSequence": "this.sequence_C88273BD_FC7D_5AD4_41E0_D21BC5B67FD5",
+ "id": "camera_C88263BD_FC7D_5AD4_41EF_21851314A331",
  "manualZoomSpeed": 2,
  "class": "PanoramaCamera",
  "automaticZoomSpeed": 10
@@ -9910,30 +9864,6 @@
  "hfov": 3.76
 },
 {
- "id": "ImageResource_D215998F_FCFB_B6B5_41B1_A767589F3295",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1232
-  },
-  {
-   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 657
-  },
-  {
-   "url": "media/popup_E3DD70BB_FCCC_F6DC_41E8_213669A4C23E_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 328
-  }
- ]
-},
-{
  "scrollBarWidth": 10,
  "children": [
   "this.Image_BD15FCC8_9478_145B_41DA_B306F52E3FCF"
@@ -10045,6 +9975,19 @@
   ]
  },
  "height": 1280
+},
+{
+ "initialPosition": {
+  "yaw": -17.77,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C88B53CF_FC7D_5AB4_41E4_2FB4FE009F5F",
+ "id": "camera_C88B33CF_FC7D_5AB4_41D8_B95BE565A4A8",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
 },
 {
  "id": "ImageResource_D04796A2_FCC4_DAF0_41C9_FFD605738217",
@@ -10218,27 +10161,158 @@
  "automaticZoomSpeed": 10
 },
 {
- "id": "ImageResource_D211E98B_FCFB_B6BD_4172_02550B15F2D4",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_0.jpg",
-   "width": 1920,
-   "class": "ImageResourceLevel",
-   "height": 1280
-  },
-  {
-   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_1.jpg",
-   "width": 1024,
-   "class": "ImageResourceLevel",
-   "height": 682
-  },
-  {
-   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_2.jpg",
-   "width": 512,
-   "class": "ImageResourceLevel",
-   "height": 341
-  }
+ "data": {
+  "name": "Window75235"
+ },
+ "id": "window_D775C92F_FC45_77F4_41E5_BE6A8D047E0D",
+ "paddingLeft": 0,
+ "shadowVerticalLength": 0,
+ "closeButtonRollOverBackgroundColorRatios": [
+  0
+ ],
+ "width": 800,
+ "scrollBarColor": "#000000",
+ "gap": 10,
+ "veilOpacity": 0.4,
+ "minHeight": 20,
+ "closeButtonIconHeight": 12,
+ "overflow": "scroll",
+ "closeButtonIconWidth": 12,
+ "horizontalAlign": "center",
+ "borderSize": 0,
+ "modal": true,
+ "titleFontStyle": "normal",
+ "closeButtonIconLineWidth": 2,
+ "height": 800,
+ "propagateClick": false,
+ "showEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "minWidth": 20,
+ "titleFontFamily": "Arial",
+ "headerBackgroundColor": [
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF"
+ ],
+ "class": "Window",
+ "backgroundColor": [],
+ "headerPaddingBottom": 10,
+ "veilColorRatios": [
+  0,
+  1
+ ],
+ "closeButtonRollOverBackgroundColor": [
+  "#C13535"
+ ],
+ "closeButtonPressedIconColor": "#FFFFFF",
+ "footerBackgroundColor": [
+  "#FFFFFF",
+  "#EEEEEE",
+  "#DDDDDD"
+ ],
+ "bodyBackgroundColorRatios": [
+  0,
+  0.5,
+  1
+ ],
+ "contentOpaque": false,
+ "bodyBackgroundColor": [
+  "#FFFFFF",
+  "#DDDDDD",
+  "#FFFFFF"
+ ],
+ "title": "Porqu\u00e9 la llamamos Casa de la Independencia",
+ "bodyBorderColor": "#000000",
+ "backgroundOpacity": 1,
+ "headerBackgroundColorRatios": [
+  0,
+  0.1,
+  1
+ ],
+ "bodyBackgroundOpacity": 1,
+ "shadow": true,
+ "veilColorDirection": "horizontal",
+ "headerPaddingTop": 10,
+ "borderRadius": 5,
+ "scrollBarWidth": 10,
+ "footerBackgroundColorRatios": [
+  0,
+  0.9,
+  1
+ ],
+ "titlePaddingBottom": 5,
+ "closeButtonIconColor": "#000000",
+ "closeButtonRollOverIconColor": "#FFFFFF",
+ "backgroundColorRatios": [],
+ "children": [
+  "this.htmlText_D776C92E_FC45_77F4_41D2_8D3D6C133200"
+ ],
+ "paddingRight": 0,
+ "titleFontSize": "18px",
+ "shadowColor": "#000000",
+ "shadowBlurRadius": 6,
+ "bodyBackgroundColorDirection": "vertical",
+ "footerBackgroundColorDirection": "vertical",
+ "closeButtonPressedBackgroundColorRatios": [
+  0
+ ],
+ "headerBackgroundColorDirection": "vertical",
+ "veilShowEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeInEffect"
+ },
+ "footerHeight": 5,
+ "bodyPaddingRight": 5,
+ "veilHideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "shadowOpacity": 0.5,
+ "paddingBottom": 0,
+ "shadowSpread": 1,
+ "titleFontColor": "#000000",
+ "closeButtonBackgroundColorRatios": [],
+ "scrollBarOpacity": 0.5,
+ "hideEffect": {
+  "duration": 500,
+  "easing": "cubic_in_out",
+  "class": "FadeOutEffect"
+ },
+ "scrollBarVisible": "rollOver",
+ "headerVerticalAlign": "middle",
+ "bodyBorderSize": 0,
+ "verticalAlign": "middle",
+ "titlePaddingTop": 5,
+ "headerPaddingRight": 10,
+ "bodyPaddingTop": 5,
+ "backgroundColorDirection": "vertical",
+ "titlePaddingRight": 5,
+ "bodyPaddingBottom": 5,
+ "scrollBarMargin": 2,
+ "titlePaddingLeft": 5,
+ "headerBorderColor": "#000000",
+ "headerPaddingLeft": 10,
+ "closeButtonPressedBackgroundColor": [
+  "#3A1D1F"
+ ],
+ "headerBorderSize": 0,
+ "titleTextDecoration": "none",
+ "bodyPaddingLeft": 5,
+ "headerBackgroundOpacity": 1,
+ "titleFontWeight": "bold",
+ "layout": "vertical",
+ "paddingTop": 0,
+ "closeButtonBorderRadius": 11,
+ "closeButtonBackgroundColor": [],
+ "shadowHorizontalLength": 3,
+ "veilColor": [
+  "#000000",
+  "#000000"
  ]
 },
 {
@@ -10467,6 +10541,30 @@
  "maxWidth": 60
 },
 {
+ "id": "ImageResource_D211E98B_FCFB_B6BD_4172_02550B15F2D4",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_0.jpg",
+   "width": 1920,
+   "class": "ImageResourceLevel",
+   "height": 1280
+  },
+  {
+   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_1.jpg",
+   "width": 1024,
+   "class": "ImageResourceLevel",
+   "height": 682
+  },
+  {
+   "url": "media/popup_E3DE30B6_FCCC_F6D4_41E7_AED716D446FE_0_2.jpg",
+   "width": 512,
+   "class": "ImageResourceLevel",
+   "height": 341
+  }
+ ]
+},
+{
  "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_31_t.jpg",
  "duration": 5000,
  "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_31",
@@ -10482,212 +10580,6 @@
   ]
  },
  "height": 1286
-},
-{
- "data": {
-  "name": "Window82758"
- },
- "id": "window_D11C524B_FC45_F5BC_41ED_81082A117B99",
- "paddingLeft": 0,
- "shadowVerticalLength": 0,
- "closeButtonRollOverBackgroundColorRatios": [
-  0
- ],
- "width": 800,
- "scrollBarColor": "#000000",
- "gap": 10,
- "veilOpacity": 0.4,
- "minHeight": 20,
- "closeButtonIconHeight": 12,
- "overflow": "scroll",
- "closeButtonIconWidth": 12,
- "horizontalAlign": "center",
- "borderSize": 0,
- "modal": true,
- "titleFontStyle": "normal",
- "closeButtonIconLineWidth": 2,
- "height": 800,
- "propagateClick": false,
- "showEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "minWidth": 20,
- "titleFontFamily": "Arial",
- "headerBackgroundColor": [
-  "#DDDDDD",
-  "#EEEEEE",
-  "#FFFFFF"
- ],
- "class": "Window",
- "backgroundColor": [],
- "headerPaddingBottom": 10,
- "veilColorRatios": [
-  0,
-  1
- ],
- "closeButtonRollOverBackgroundColor": [
-  "#C13535"
- ],
- "closeButtonPressedIconColor": "#FFFFFF",
- "footerBackgroundColor": [
-  "#FFFFFF",
-  "#EEEEEE",
-  "#DDDDDD"
- ],
- "bodyBackgroundColorRatios": [
-  0,
-  0.5,
-  1
- ],
- "contentOpaque": false,
- "bodyBackgroundColor": [
-  "#FFFFFF",
-  "#DDDDDD",
-  "#FFFFFF"
- ],
- "title": "Historia",
- "bodyBorderColor": "#000000",
- "backgroundOpacity": 1,
- "headerBackgroundColorRatios": [
-  0,
-  0.1,
-  1
- ],
- "bodyBackgroundOpacity": 1,
- "shadow": true,
- "veilColorDirection": "horizontal",
- "headerPaddingTop": 10,
- "borderRadius": 5,
- "scrollBarWidth": 10,
- "footerBackgroundColorRatios": [
-  0,
-  0.9,
-  1
- ],
- "titlePaddingBottom": 5,
- "closeButtonIconColor": "#000000",
- "closeButtonRollOverIconColor": "#FFFFFF",
- "backgroundColorRatios": [],
- "children": [
-  "this.htmlText_D11FE24B_FC45_F5BC_41DC_24D876169B31"
- ],
- "paddingRight": 0,
- "titleFontSize": "1.25vmax",
- "shadowColor": "#000000",
- "shadowBlurRadius": 6,
- "bodyBackgroundColorDirection": "vertical",
- "footerBackgroundColorDirection": "vertical",
- "closeButtonPressedBackgroundColorRatios": [
-  0
- ],
- "headerBackgroundColorDirection": "vertical",
- "titleFontColor": "#000000",
- "footerHeight": 5,
- "bodyPaddingRight": 5,
- "veilHideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "shadowOpacity": 0.5,
- "paddingBottom": 0,
- "shadowSpread": 1,
- "veilShowEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeInEffect"
- },
- "closeButtonBackgroundColorRatios": [],
- "scrollBarOpacity": 0.5,
- "hideEffect": {
-  "duration": 500,
-  "easing": "cubic_in_out",
-  "class": "FadeOutEffect"
- },
- "scrollBarVisible": "rollOver",
- "headerVerticalAlign": "middle",
- "bodyBorderSize": 0,
- "verticalAlign": "middle",
- "titlePaddingTop": 5,
- "headerPaddingRight": 10,
- "bodyPaddingTop": 5,
- "backgroundColorDirection": "vertical",
- "titlePaddingRight": 5,
- "bodyPaddingBottom": 5,
- "scrollBarMargin": 2,
- "titlePaddingLeft": 5,
- "headerBorderColor": "#000000",
- "headerPaddingLeft": 10,
- "closeButtonPressedBackgroundColor": [
-  "#3A1D1F"
- ],
- "headerBorderSize": 0,
- "titleTextDecoration": "none",
- "bodyPaddingLeft": 5,
- "headerBackgroundOpacity": 1,
- "titleFontWeight": "bold",
- "layout": "vertical",
- "paddingTop": 0,
- "closeButtonBorderRadius": 11,
- "closeButtonBackgroundColor": [],
- "shadowHorizontalLength": 3,
- "veilColor": [
-  "#000000",
-  "#000000"
- ]
-},
-{
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24",
- "class": "Photo",
- "width": 1920,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 1280
-},
-{
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38",
- "class": "Photo",
- "width": 1448,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 1920
-},
-{
- "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1_t.jpg",
- "duration": 5000,
- "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1",
- "class": "Photo",
- "width": 1920,
- "image": {
-  "class": "ImageResource",
-  "levels": [
-   {
-    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1.jpg",
-    "class": "ImageResourceLevel"
-   }
-  ]
- },
- "height": 2123
 },
 {
  "scrollBarWidth": 10,
@@ -10734,56 +10626,38 @@
  }
 },
 {
- "rotationY": 0,
- "rotationX": 0,
- "popupDistance": 100,
- "hideEasing": "cubic_out",
- "rotationZ": 0,
- "popupMaxWidth": "95%",
- "id": "popup_E3A62B7B_FCCD_AA5C_41C7_EFC6F5081132",
- "showDuration": 500,
- "class": "PopupPanoramaOverlay",
- "popupMaxHeight": "95%",
- "hideDuration": 500,
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24",
+ "class": "Photo",
+ "width": 1920,
  "image": {
   "class": "ImageResource",
   "levels": [
    {
-    "url": "media/popup_E3A62B7B_FCCD_AA5C_41C7_EFC6F5081132_0_2.jpg",
-    "width": 926,
-    "class": "ImageResourceLevel",
-    "height": 1024
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_24.jpg",
+    "class": "ImageResourceLevel"
    }
   ]
  },
- "pitch": 9.64,
- "showEasing": "cubic_in",
- "yaw": 37.85,
- "hfov": 3.7
+ "height": 1280
 },
 {
- "id": "ImageResource_D071F6B6_FCC4_DAD7_41E1_066535F06347",
- "class": "ImageResource",
- "levels": [
-  {
-   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_0.jpg",
-   "width": 1500,
-   "class": "ImageResourceLevel",
-   "height": 1920
-  },
-  {
-   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_1.jpg",
-   "width": 800,
-   "class": "ImageResourceLevel",
-   "height": 1024
-  },
-  {
-   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_2.jpg",
-   "width": 400,
-   "class": "ImageResourceLevel",
-   "height": 512
-  }
- ]
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38",
+ "class": "Photo",
+ "width": 1448,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_38.jpg",
+    "class": "ImageResourceLevel"
+   }
+  ]
+ },
+ "height": 1920
 },
 {
  "label": "Patio",
@@ -11093,6 +10967,132 @@
  ]
 },
 {
+ "initialPosition": {
+  "yaw": 82.86,
+  "hfov": 80,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "initialSequence": "this.sequence_C8E7F403_FC7D_5DAD_41E0_2E00D330D753",
+ "id": "camera_C8E7E403_FC7D_5DAD_41D9_F7A05DBA301A",
+ "manualZoomSpeed": 2,
+ "class": "PanoramaCamera",
+ "automaticZoomSpeed": 10
+},
+{
+ "scrollBarWidth": 10,
+ "children": [
+  "this.IconButton_38922473_0C06_2593_4199_C585853A1AB3"
+ ],
+ "id": "Container_3A67552A_0C3A_67BD_4195_ECE46CCB34EA",
+ "paddingLeft": 0,
+ "paddingRight": 0,
+ "width": "100%",
+ "gap": 10,
+ "minHeight": 1,
+ "scrollBarColor": "#000000",
+ "horizontalAlign": "left",
+ "borderSize": 0,
+ "height": 140,
+ "propagateClick": false,
+ "paddingBottom": 0,
+ "minWidth": 1,
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "Container",
+ "backgroundColor": [
+  "#FFFFFF",
+  "#FFFFFF"
+ ],
+ "verticalAlign": "top",
+ "backgroundColorDirection": "vertical",
+ "creationPolicy": "inAdvance",
+ "contentOpaque": false,
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0.3,
+ "borderRadius": 0,
+ "overflow": "scroll",
+ "shadow": false,
+ "layout": "absolute",
+ "paddingTop": 0,
+ "backgroundColorRatios": [
+  0,
+  1
+ ],
+ "data": {
+  "name": "header"
+ }
+},
+{
+ "rotationY": 0,
+ "rotationX": 0,
+ "popupDistance": 100,
+ "hideEasing": "cubic_out",
+ "rotationZ": 0,
+ "popupMaxWidth": "95%",
+ "id": "popup_E3A62B7B_FCCD_AA5C_41C7_EFC6F5081132",
+ "showDuration": 500,
+ "class": "PopupPanoramaOverlay",
+ "popupMaxHeight": "95%",
+ "hideDuration": 500,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/popup_E3A62B7B_FCCD_AA5C_41C7_EFC6F5081132_0_2.jpg",
+    "width": 926,
+    "class": "ImageResourceLevel",
+    "height": 1024
+   }
+  ]
+ },
+ "pitch": 9.64,
+ "showEasing": "cubic_in",
+ "yaw": 37.85,
+ "hfov": 3.7
+},
+{
+ "id": "ImageResource_D071F6B6_FCC4_DAD7_41E1_066535F06347",
+ "class": "ImageResource",
+ "levels": [
+  {
+   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_0.jpg",
+   "width": 1500,
+   "class": "ImageResourceLevel",
+   "height": 1920
+  },
+  {
+   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_1.jpg",
+   "width": 800,
+   "class": "ImageResourceLevel",
+   "height": 1024
+  },
+  {
+   "url": "media/popup_E8E1BAA6_FC4B_EAF4_41EF_70F281AD5387_0_2.jpg",
+   "width": 400,
+   "class": "ImageResourceLevel",
+   "height": 512
+  }
+ ]
+},
+{
+ "thumbnailUrl": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1_t.jpg",
+ "duration": 5000,
+ "id": "album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1",
+ "class": "Photo",
+ "width": 1920,
+ "image": {
+  "class": "ImageResource",
+  "levels": [
+   {
+    "url": "media/album_E5CEEA2D_FC7B_55F5_41D6_705905D42D8B_1.jpg",
+    "class": "ImageResourceLevel"
+   }
+  ]
+ },
+ "height": 2123
+},
+{
  "id": "veilPopupPanorama",
  "left": 0,
  "paddingLeft": 0,
@@ -11118,7 +11118,7 @@
  "backgroundOpacity": 0.55,
  "shadow": false,
  "data": {
-  "name": "UIComponent92549"
+  "name": "UIComponent98029"
  },
  "borderRadius": 0,
  "visible": false,
@@ -11147,7 +11147,7 @@
  "shadow": false,
  "scaleMode": "custom",
  "data": {
-  "name": "ZoomImage92550"
+  "name": "ZoomImage98030"
  },
  "borderRadius": 0,
  "visible": false,
@@ -11212,7 +11212,7 @@
  "iconWidth": 20,
  "cursor": "hand",
  "data": {
-  "name": "CloseButton92551"
+  "name": "CloseButton98031"
  }
 },
 {
@@ -11296,7 +11296,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151, this.camera_C192901B_FC47_75DC_41EC_49E3887EBF5C); this.mainPlayList.set('selectedIndex', 8)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151, this.camera_C8E7E403_FC7D_5DAD_41D9_F7A05DBA301A); this.mainPlayList.set('selectedIndex', 8)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -11391,32 +11391,6 @@
  "restartMovementOnUserInteraction": false
 },
 {
- "scrollBarColor": "#000000",
- "paddingLeft": 10,
- "id": "htmlText_D007ABF7_FC4F_6A54_4187_A042DBA2B2B1",
- "width": "100%",
- "paddingRight": 10,
- "minHeight": 0,
- "borderSize": 0,
- "minWidth": 0,
- "propagateClick": false,
- "paddingBottom": 10,
- "height": "100%",
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "HTMLText",
- "scrollBarMargin": 2,
- "backgroundOpacity": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">La antigua casona sigui\u00f3 en poder de particulares hasta el a\u00f1o 1943 en que fue adquirido por el gobierno paraguayo, dado su origen eminentemente hist\u00f3rico. Lastimosamente desde su adquisici\u00f3n, el predio hab\u00eda quedado en estado de abandono hasta el a\u00f1o 1951 en el que se hicieron peque\u00f1as refacciones.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">En el a\u00f1o 1961 por Decreto del P.E. N\u00b0 15.639 de fecha 2 de mayo, fue declarado Monumento Hist\u00f3rico Nacional. Por el mismo Decreto se cre\u00f3 una Comisi\u00f3n Nacional de la Casa de la Independencia compuesta por el Sub Secretario de Educaci\u00f3n y Culto, Director del Departamento de Ense\u00f1anza Superior y Difusi\u00f3n Cultural del mismo Ministerio, Director del Departamento de Cultura de la Municipalidad de la Capital, Presidente del Instituto de Numism\u00e1tica y Antig\u00fcedades del Paraguay, Presidente del Instituto de Investigaciones Hist\u00f3ricas, Asesor: Director General de Archivo, Biblioteca y Museos de la Naci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Se ha nombrado adem\u00e1s una Comisi\u00f3n Asesora de entendidos en antig\u00fcedades, arquitectos, historiadores, religiosos, artistas, coleccionistas. Asesoraba adem\u00e1s la Oficina T\u00e9cnica del Ministerio de Obras P\u00fablicas y Comunicaciones, el Instituto Paraguayo de Investigaciones Hist\u00f3ricas y finalmente, se ha nombrado un Director de la Casa quien fue el encargado de ejecutar lo proyectado por la Comisi\u00f3n Nacional.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El conjunto de personas citadas anteriormente se ha empe\u00f1ado en hacer resaltar la verdadera significaci\u00f3n hist\u00f3rica que tiene la Casa y ha efectuado las refacciones necesarias para hacer un Museo alhajado al estilo de las viviendas de la \u00e9poca colonial.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Para ello se preocuparon por el acopio de reliquias coloniales de la \u00e9poca y que guardan relaci\u00f3n con la Independencia obteni\u00e9ndose tambi\u00e9n varios objetos que pertenec\u00edan a nuestros pr\u00f3ceres o a familiares de \u00e9stos enriqueciendo de esta manera la colecci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El Museo \u201cCasa de la Independencia\u201d fue inaugurado como tal el 14 de Mayo de 1965 y se conservan reliquias de incalculable valor hist\u00f3rico.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">En Febrero de 2003 </SPAN><SPAN STYLE=\"font-size:1.48vmin;\"><B>NICOL\u00c1S DARIO LATOURRETTE BO</B></SPAN><SPAN STYLE=\"font-size:1.48vmin;\"> por iniciativa y medios propios restaura todo el acervo museogr\u00e1fico. A partir del 2005 es </SPAN><SPAN STYLE=\"font-size:1.48vmin;\"><B>PROTECTOR VITALICIO DEL MUSEO CASA DE LA INDEPENDENCIA.</B></SPAN></SPAN></DIV></div>",
- "shadow": false,
- "data": {
-  "name": "HTMLText78462"
- },
- "borderRadius": 0,
- "paddingTop": 10,
- "scrollBarWidth": 10
-},
-{
  "yaw": -84.79,
  "bleachingDistance": 0.4,
  "bleaching": 0.7,
@@ -11463,7 +11437,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6, this.camera_C1AEE052_FC47_75AF_41E1_94394FF14F25); this.mainPlayList.set('selectedIndex', 6)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6, this.camera_C8C48432_FC7D_5DEF_41EB_91F34A4DC04D); this.mainPlayList.set('selectedIndex', 6)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -11845,7 +11819,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151, this.camera_C1BD3042_FC47_75AC_41ED_F7D4074FFA0A); this.mainPlayList.set('selectedIndex', 8)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6DF47ED_FBDD_FA74_41E0_D4A83DDCA151, this.camera_C8F94422_FC7D_5DEF_41D0_2243930AD35B); this.mainPlayList.set('selectedIndex', 8)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -11869,9 +11843,42 @@
  "enabledInCardboard": true
 },
 {
+ "movements": [
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_in"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 323,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "linear"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_out"
+  }
+ ],
+ "id": "sequence_C8D20441_FC7D_5DAC_41B3_625D03A6A10A",
+ "class": "PanoramaCameraSequence",
+ "restartMovementOnUserInteraction": false
+},
+{
+ "yaw": 89.06,
+ "bleachingDistance": 0.4,
+ "bleaching": 0.7,
+ "id": "overlay_F58EC2E7_FBC5_FA74_41B8_26DD4059C9AD",
+ "class": "LensFlarePanoramaOverlay",
+ "pitch": 20.66
+},
+{
  "scrollBarColor": "#000000",
  "paddingLeft": 10,
- "id": "htmlText_D776C92E_FC45_77F4_41D2_8D3D6C133200",
+ "id": "htmlText_D3C32EC1_FC5C_AAAD_41EE_DA3EBCAE05CE",
  "width": "100%",
  "paddingRight": 10,
  "minHeight": 0,
@@ -11885,22 +11892,14 @@
  "class": "HTMLText",
  "scrollBarMargin": 2,
  "backgroundOpacity": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">En \u00e9ste solar, propiedad en condominio de los hermanos MART\u00cdNEZ S\u00c1ENZ sol\u00eda hospedarse el Capit\u00e1n PEDRO JUAN CAVALLERO cuando ven\u00eda a la capital desde su pueblo natal de Tobat\u00ed, pues era primo de los due\u00f1os de casa.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Muy asidua a la casa era Do\u00f1a JUANA MAR\u00cdA DE LARA, cuyo domicilio se hallaba al frente. Esta era mayordoma permanente de la Catedral y del templo Santo Domingo. Su sobrino era el pr\u00f3cer VICENTE IGNACIO ITURBE, quien habitualmente se hospedaba en casa de la ilustre patricia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El Capit\u00e1n JUAN BAUTISTA RIVAROLA, quien resid\u00eda en Barrero Grande (hoy Eusebio Ayala), cuando viajaba a la ciudad buscaba albergue en la casa de su suegra quien ten\u00eda su propiedad a la vera del antiguo Callej\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Frecuentaba la casa, el pr\u00f3cer FULGENCIO YEGROS quien festejaba a FACUNDA MICAELA SPERATTI, cu\u00f1ada de PEDRO PABLO MART\u00cdNEZ S\u00c1ENZ. Ella viv\u00eda tambi\u00e9n en la casona y contrajeron matrimonio seis meses despu\u00e9s de nuestra independencia. Era tambi\u00e9n asiduo visitante de la casa el Teniente MARIANO RECALDE que en la misma \u00e9poca festejaba a VIRGINIA MAR\u00cdN, cu\u00f1ada de SEBASTI\u00c1N ANTONIO MART\u00cdNEZ S\u00c1ENZ. Estos se unieron en matrimonio en marzo de 1813.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Por lo tanto para los principales protagonistas de nuestra independencia, el sitio m\u00e1s c\u00f3modo y disimulado donde reunirse fue la casa de los MART\u00cdNEZ S\u00c1ENZ quienes utilizaban la misma no solo con fines rom\u00e1nticos sino tambi\u00e9n como sede de las reuniones secretas en la que se conspiraba contra el gobierno espa\u00f1ol.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Toda esa conspiraci\u00f3n culmin\u00f3 la noche del 14 de Mayo de 1811 cuando los patriotas dieron el golpe encabezados por PEDRO JUAN CAVALLERO.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Estos hombres salieron por el callej\u00f3n contiguo a la Casa, hoy llamado \"CALLEJ\u00d3N HIST\u00d3RICO\" y se dirigieron hacia la casa del Gobernador espa\u00f1ol distante a pocas cuadras del lugar.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Tomaron los cuarteles y en la madrugada del 15 de Mayo, ante la firme decisi\u00f3n de los patriotas que dieron un plazo perentorio, el Gobernador BERNARDO DE VELAZCO Y HUIDOBRO, entreg\u00f3 el mando.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Lo hermoso de nuestra independencia es que la misma se consigui\u00f3 solamente con paraguayos y sin derramamiento de sangre. Esta Casa es la m\u00e1s grande en su significado hist\u00f3rico, puesto que en ella se gest\u00f3 la emancipaci\u00f3n definitiva de la corona espa\u00f1ola.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El Museo Casa de la Independencia est\u00e1 alhajado al estilo de las viviendas de la \u00e9poca colonial y conserva objetos que pertenecieron a nuestros pr\u00f3ceres, a familiares de estos, o que guardan relaci\u00f3n con aquel tiempo.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El plano de la casa revela la t\u00edpica construcci\u00f3n colonial de la residencia de una familia acomodada a metros de la Plaza de Armas y la Casa de los Gobernadores en la esquina de las calles 14 de mayo entre Palma y Pdte. Franco de nuestra ciudad capital.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Al recorrer las piezas de la vieja casona, daremos paso hacia atr\u00e1s dentro del tiempo pensando en los d\u00edas gloriosos que precedieron a nuestra independencia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Consta de cinco salas y un gran sal\u00f3n, dispuestos en torno a un patio. A la entrada puede verse un mural del ceramista Jos\u00e9 Laterza Parodi que representa los edificios y lugares m\u00e1s destacados de la Asunci\u00f3n Colonial en 1811.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El sector residencial comienza en un hall corredor en cuyos extremos se encuentran el escritorio y el oratorio. En la parte posterior m\u00e1s \u00edntima del \u00e1rea residencial se encuentran el comedor contiguo a la sala y el dormitorio en el extremo edilicio.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Cuenta con un acervo icnogr\u00e1fico que incluye los retratos de los protagonistas, pintados en base a descripciones orales. De todos los pr\u00f3ceres de la Independencia el \u00fanico retratado en vida fue Jos\u00e9 Gaspar de Francia. Otras pinturas inmortalizan momentos estelares vinculados a la gesta.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Una visita al museo permite tambi\u00e9n observar Documentos de \u00e9poca, utensilios, mobiliarios originales que reflejan el estilo de vida en los albores de nuestra Rep\u00fablica.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El proceso que culmino con la Independencia del Paraguay y la formaci\u00f3n de la primera Rep\u00fablica de Sudam\u00e9rica se extendi\u00f3 entre 1811 y 1813.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Ning\u00fan monumento nacional es tan fuerte en su significado hist\u00f3rico y es por eso que como paraguayos deseamos que nuestros visitantes conozcan la riqueza que hay en ella, no solo material, sino hist\u00f3rica, que es lo m\u00e1s importante para nosotros.</SPAN></SPAN></DIV></div>",
  "shadow": false,
  "data": {
-  "name": "HTMLText75236"
+  "name": "HTMLText86765"
  },
  "borderRadius": 0,
  "paddingTop": 10,
  "scrollBarWidth": 10
-},
-{
- "yaw": 89.06,
- "bleachingDistance": 0.4,
- "bleaching": 0.7,
- "id": "overlay_F58EC2E7_FBC5_FA74_41B8_26DD4059C9AD",
- "class": "LensFlarePanoramaOverlay",
- "pitch": 20.66
 },
 {
  "yaw": -66.45,
@@ -11933,7 +11932,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6, this.camera_C061600C_FC47_75BB_41DA_C62B847BD883); this.mainPlayList.set('selectedIndex', 6)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6C815BB_FBDC_DEDD_41B7_DD0A8F51F8D6, this.camera_C89B63F2_FC7D_5A6C_41D9_4B9419388B1A); this.mainPlayList.set('selectedIndex', 6)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -12241,32 +12240,6 @@
  "restartMovementOnUserInteraction": false
 },
 {
- "scrollBarColor": "#000000",
- "paddingLeft": 10,
- "id": "htmlText_D3C32EC1_FC5C_AAAD_41EE_DA3EBCAE05CE",
- "width": "100%",
- "paddingRight": 10,
- "minHeight": 0,
- "borderSize": 0,
- "minWidth": 0,
- "propagateClick": false,
- "paddingBottom": 10,
- "height": "100%",
- "scrollBarOpacity": 0.5,
- "scrollBarVisible": "rollOver",
- "class": "HTMLText",
- "scrollBarMargin": 2,
- "backgroundOpacity": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El Museo Casa de la Independencia est\u00e1 alhajado al estilo de las viviendas de la \u00e9poca colonial y conserva objetos que pertenecieron a nuestros pr\u00f3ceres, a familiares de estos, o que guardan relaci\u00f3n con aquel tiempo.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El plano de la casa revela la t\u00edpica construcci\u00f3n colonial de la residencia de una familia acomodada a metros de la Plaza de Armas y la Casa de los Gobernadores en la esquina de las calles 14 de mayo entre Palma y Pdte. Franco de nuestra ciudad capital.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Al recorrer las piezas de la vieja casona, daremos paso hacia atr\u00e1s dentro del tiempo pensando en los d\u00edas gloriosos que precedieron a nuestra independencia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Consta de cinco salas y un gran sal\u00f3n, dispuestos en torno a un patio. A la entrada puede verse un mural del ceramista Jos\u00e9 Laterza Parodi que representa los edificios y lugares m\u00e1s destacados de la Asunci\u00f3n Colonial en 1811.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El sector residencial comienza en un hall corredor en cuyos extremos se encuentran el escritorio y el oratorio. En la parte posterior m\u00e1s \u00edntima del \u00e1rea residencial se encuentran el comedor contiguo a la sala y el dormitorio en el extremo edilicio.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Cuenta con un acervo icnogr\u00e1fico que incluye los retratos de los protagonistas, pintados en base a descripciones orales. De todos los pr\u00f3ceres de la Independencia el \u00fanico retratado en vida fue Jos\u00e9 Gaspar de Francia. Otras pinturas inmortalizan momentos estelares vinculados a la gesta.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Una visita al museo permite tambi\u00e9n observar Documentos de \u00e9poca, utensilios, mobiliarios originales que reflejan el estilo de vida en los albores de nuestra Rep\u00fablica.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">El proceso que culmino con la Independencia del Paraguay y la formaci\u00f3n de la primera Rep\u00fablica de Sudam\u00e9rica se extendi\u00f3 entre 1811 y 1813.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Ning\u00fan monumento nacional es tan fuerte en su significado hist\u00f3rico y es por eso que como paraguayos deseamos que nuestros visitantes conozcan la riqueza que hay en ella, no solo material, sino hist\u00f3rica, que es lo m\u00e1s importante para nosotros.</SPAN></SPAN></DIV></div>",
- "shadow": false,
- "data": {
-  "name": "HTMLText86765"
- },
- "borderRadius": 0,
- "paddingTop": 10,
- "scrollBarWidth": 10
-},
-{
  "movements": [
   {
    "yawSpeed": 7.96,
@@ -12312,7 +12285,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C1D64071_FC47_766C_41C5_390B5D766DC1",
+ "id": "sequence_C82B1460_FC7D_5E6C_41E7_512094149D02",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -12337,7 +12310,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C192B01B_FC47_75DC_419C_3898AEBCF800",
+ "id": "sequence_C8DE7450_FC7D_5DAB_41E2_6FC7FE11B6E8",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -12362,7 +12335,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C0680FFB_FC47_6A5C_41E4_F725870C0935",
+ "id": "sequence_C83CE488_FC7D_5EBC_41D5_F26FDF6A2AB1",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -12387,14 +12360,39 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C07BEFDC_FC47_6A5B_41DA_E33B214662F4",
+ "id": "sequence_C89A83F2_FC7D_5A6C_41EF_5063F9953691",
+ "class": "PanoramaCameraSequence",
+ "restartMovementOnUserInteraction": false
+},
+{
+ "movements": [
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_in"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 323,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "linear"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_out"
+  }
+ ],
+ "id": "sequence_C8376473_FC7D_5E6D_41EF_3E0DCFC38214",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
 {
  "scrollBarColor": "#000000",
  "paddingLeft": 10,
- "id": "htmlText_D7765463_FC4C_FE6C_41DB_2635E370BDED",
+ "id": "htmlText_D11FE24B_FC45_F5BC_41DC_24D876169B31",
  "width": "100%",
  "paddingRight": 10,
  "minHeight": 0,
@@ -12408,10 +12406,36 @@
  "class": "HTMLText",
  "scrollBarMargin": 2,
  "backgroundOpacity": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Para el logro de su independencia, el Paraguay tuvo que enfrentar dos situaciones:</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">a) el dominio espa\u00f1ol, para cuya ca\u00edda bast\u00f3 el incruento pronunciamiento del 14 y 15 de mayo de 1811; y</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">b) la pretensi\u00f3n de la junta de Buenos Aires, a partir de mayo de 1810, de conservar en su beneficio la integridad territorial del extinguido Virreynato del R\u00edo de La Plata. La Provincia del Paraguay, todav\u00eda bajo dominio espa\u00f1ol, rechaz\u00f3 categ\u00f3ricamente esa pretensi\u00f3n. Fue especialmente elocuente la decisi\u00f3n de los jefes, oficiales y tropas paraguayos que enfrentaron victoriosamente en Paraguay y Tacuary a la expedici\u00f3n de Manuel Belgrano, brazo armado de las pretensiones de Buenos Aires. Producida la independencia nacional, mediante el consenso y decisi\u00f3n de los pr\u00f3ceres - civiles, militares y eclesi\u00e1sticos - los gobiernos de Buenos Aires siguieron insistiendo en su prop\u00f3sito de lograr la sumisi\u00f3n del Paraguay, mediante toda clase de presi\u00f3n: pol\u00edtica, militar y econ\u00f3mica.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">La sola menci\u00f3n de la fecha de reconocimiento de nuestra independencia -1852 - muestra con evidencia cuan obstinado fue el empe\u00f1o por negar aquella realidad de hecho y de derecho de que habl\u00f3 Don Carlos, cuando desde las columnas de \"El Paraguayo Independiente\", fundamentaba las razones que avalaban aquella decisi\u00f3n irreversible.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">La lucha por la independencia absorbi\u00f3 el concurso ciudadano de miles de paraguayos. Desde los combatientes de Paraguar\u00ed y Tacuary, los protagonistas del pronunciamiento del 14/15 de Mayo de 1811 los sostenedores de la afirmaci\u00f3n de nuestra emancipaci\u00f3n en los Congresos de 1811, 1813, 1814, 1816, 1842; los jefes y oficiales y tropa que guarnec\u00edan nuestras fronteras; militantes de \u00f3rdenes religiosas, capellanes de nuestro Ej\u00e9rcito; intelectuales y artesanos empe\u00f1ados en la larga vigilia, integran la extensa y honrosa n\u00f3mina de 'Pr\u00f3ceres\" de nuestra independencia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:1.48vmin;\"><BR STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:1.48vmin;\">Muchos nombres, protagonistas directos de las victorias sobre Belgrano, como del movimiento de mayo y otros acontecimientos decisivos, habitualmente no son siquiera mencionados; los Quin de Valdovinos, los comandantes Lu\u00eds Cavallero, Pascual Urdapilleta, los Capitanes , Gervasio Acosta, Juan Bautista Acosta, Blas Jos\u00e9 Rojas de Aranda, Jos\u00e9 Mart\u00edn Fleytas, Jos\u00e9 Joaqu\u00edn y Miguel Antonio Montiel, Amancio Insaurralde, Antonio Zavala; Pedro Jos\u00e9 Genes, Juan Antonio Gonz\u00e1lez, Francisco Barrios, Sebasti\u00e1n Taboada, Vicente Antonio Matiauda, son algunos de los pr\u00f3ceres olvidados.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El 14 demayo de 1811, por el estrecho callej\u00f3n contiguo a esta antigua casona, resonaron los pasos de quienes hicieron el deso compartido por todo un pueblo: vivir en una tierra propia, libre e independiente del imperio espa\u00f1ol y de la Junta de Buenos Aires.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Esta casa fue constru\u00edda en 1772 por el espa\u00f1ol Antonio Mart\u00ednez S\u00e1enz y su esposa la paraguaya Petrona Caballero, con paredes de adobe, techo de tejas y armaz\u00f3n de palmas y tacuaras, al modo tradicional de la \u00e9poca, tal como puede apreciarse hasta hoy.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El solar fue heredado por sus hijos Pedro Pablo y Sebasti\u00e1n Antonio, convirti\u00e9ndose, por diversas circunstancias, en un lugar seguro y discreto para las reuniones secretas en las que se gest\u00f3 la ca\u00edda del gobierno espa\u00f1ol.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El Capit\u00e1n Pedro Juan Caballero, primo de los due\u00f1os de casa, se hospedaba all\u00ed cuando llegaba a la capital desde Tobat\u00ed, su pueblo natal, convergiendo con otros pr\u00f3ceres, como Do\u00f1a Juana Mar\u00eda de Lara -mayordoma de la catedral- cuya residencia, ubicada en la vereda de enfrente, era albergue habitual de su sobrino el Capit\u00e1n Vicente Ignacio Iturbe. Otro asiduo visitante era el Capit\u00e1n Juan Bautista Rivarola que durante sus frecuentes estad\u00edas en Asunci\u00f3n se hospedaba en casa de su suegra, vecina del lugar.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Las reuniones contaban as\u00ed mismo con otras ilustres personas: Fulgencio Yegros, que manten\u00eda un noviazgo con Facunda Micaela Speratti, cu\u00f1ada de Pedro Pablo Mart\u00ednez S\u00e1enz al igual que el del Teniente Mariano Recalde que a su vez cortejaba a Virginia Mar\u00edn, cu\u00f1ada del otro propietario, Sebasti\u00e1n Antonio.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El Callej\u00f3n Hist\u00f3rico representa uno de los lugares m\u00e1s significativos de la casa, pues diversos relatos de la \u00e9poca coinciden en que por all\u00ed salieron los patriotas para tomar los cuarteles e intimar rendici\u00f3n al Gobernador espa\u00f1ol Bernardo de Velazco.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Las narraciones orales aseguran que la callejuela tambi\u00e9n fue transitada por Do\u00f1a Juana Mar\u00eda de Lara para dirigirse a la Catedral de Asunci\u00f3n a pedir al Padre Mariano Molas el \"santo y se\u00f1a\" del triunfo: un repique continuado de campanas que en la madrugada del 15 de mayo convoc\u00f3 al pueblo a celebrar el nacimiento del Paraguay como naci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">En el proceso de Independencia paraguaya no existi\u00f3 derramamiento de sangre. Ante la intimidaci\u00f3n de los patriotas, el Gobernador espa\u00f1ol Bernardo de Velazco depuso armas y acept\u00f3 formar parte de un gobierno interino conjuntamente con el Doctor Jos\u00e9 Gaspar Rodr\u00edguez de Francia y el Capit\u00e1n Juan Valeriano Zevallos.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Con m\u00e1s de doscientos veintiocho a\u00f1os de existencia, el hoy Museo Casa de la Independencia constituye no solamente un s\u00edmbolo de libertad, sino tambi\u00e9n un invalorable patrimonio cultural. Es uno de las m\u00e1s antiguos solares coloniales que perduran y que evoca a la Asunci\u00f3n de finales del siglo XVIII.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Como testimonio de que esta casa fue gestada la emancipaci\u00f3n del pa\u00eds, durante el gobierno de Carlos Antonio L\u00f3pez por decreto de abril de 1849, se estableci\u00f3 llamar 14 de mayo a la calle de adelante del Callej\u00f3n Hist\u00f3rico, que en la esquina converge con la calle Presidente Franco.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El solar Mart\u00ednez S\u00e1enz sigui\u00f3 siendo propiedad de particulares hasta el a\u00f1o 1943 cuando fue adquirido por el Estado paraguayo, que en 1961 lo declar\u00f3 Monumento Hist\u00f3rico Nacional.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Por ser uno de los \u00faltimos vestigios edilicios de la colonia, su permanencia es vita, para el fortalecimiento de nuestra identidad y de nuestra cultura. Hacia los a\u00f1os \u00b450 estuvo a punto de perecer bajo la acci\u00f3n de la picota. La oportuna y en\u00e9rgica intervenci\u00f3n de un grupo de historiadores, liderada por Juan B. Bill, Carlos Pusineri Scala y Roberto Quevedo, impidi\u00f3 la destrucci\u00f3n total de tan valioso patrimonio.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">En el marco de los 150 a\u00f1os de la independencia del Paraguay, a solicitud ciudadana, el inmueble fue restaurado e inaugurado como Museo de la Casa de la Independencia el 14 de mayo de 1965. Una parte del predio original fue cercenado y demolido, convirti\u00e9ndose en estacionamiento de veh\u00edculos. Existieron varias tratativas para su adquisici\u00f3n, entre \u00e9stos tres proyectos de Ley de Expropiaci\u00f3n, que nunca llegaron a feliz t\u00e9rmino.</SPAN></SPAN></DIV></div>",
  "shadow": false,
  "data": {
-  "name": "HTMLText77131"
+  "name": "HTMLText82759"
+ },
+ "borderRadius": 0,
+ "paddingTop": 10,
+ "scrollBarWidth": 10
+},
+{
+ "scrollBarColor": "#000000",
+ "paddingLeft": 10,
+ "id": "htmlText_D007ABF7_FC4F_6A54_4187_A042DBA2B2B1",
+ "width": "100%",
+ "paddingRight": 10,
+ "minHeight": 0,
+ "borderSize": 0,
+ "minWidth": 0,
+ "propagateClick": false,
+ "paddingBottom": 10,
+ "height": "100%",
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "HTMLText",
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">La antigua casona sigui\u00f3 en poder de particulares hasta el a\u00f1o 1943 en que fue adquirido por el gobierno paraguayo, dado su origen eminentemente hist\u00f3rico. Lastimosamente desde su adquisici\u00f3n, el predio hab\u00eda quedado en estado de abandono hasta el a\u00f1o 1951 en el que se hicieron peque\u00f1as refacciones.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">En el a\u00f1o 1961 por Decreto del P.E. N\u00b0 15.639 de fecha 2 de mayo, fue declarado Monumento Hist\u00f3rico Nacional. Por el mismo Decreto se cre\u00f3 una Comisi\u00f3n Nacional de la Casa de la Independencia compuesta por el Sub Secretario de Educaci\u00f3n y Culto, Director del Departamento de Ense\u00f1anza Superior y Difusi\u00f3n Cultural del mismo Ministerio, Director del Departamento de Cultura de la Municipalidad de la Capital, Presidente del Instituto de Numism\u00e1tica y Antig\u00fcedades del Paraguay, Presidente del Instituto de Investigaciones Hist\u00f3ricas, Asesor: Director General de Archivo, Biblioteca y Museos de la Naci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Se ha nombrado adem\u00e1s una Comisi\u00f3n Asesora de entendidos en antig\u00fcedades, arquitectos, historiadores, religiosos, artistas, coleccionistas. Asesoraba adem\u00e1s la Oficina T\u00e9cnica del Ministerio de Obras P\u00fablicas y Comunicaciones, el Instituto Paraguayo de Investigaciones Hist\u00f3ricas y finalmente, se ha nombrado un Director de la Casa quien fue el encargado de ejecutar lo proyectado por la Comisi\u00f3n Nacional.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El conjunto de personas citadas anteriormente se ha empe\u00f1ado en hacer resaltar la verdadera significaci\u00f3n hist\u00f3rica que tiene la Casa y ha efectuado las refacciones necesarias para hacer un Museo alhajado al estilo de las viviendas de la \u00e9poca colonial.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Para ello se preocuparon por el acopio de reliquias coloniales de la \u00e9poca y que guardan relaci\u00f3n con la Independencia obteni\u00e9ndose tambi\u00e9n varios objetos que pertenec\u00edan a nuestros pr\u00f3ceres o a familiares de \u00e9stos enriqueciendo de esta manera la colecci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El Museo \u201cCasa de la Independencia\u201d fue inaugurado como tal el 14 de Mayo de 1965 y se conservan reliquias de incalculable valor hist\u00f3rico.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">En Febrero de 2003 </SPAN><SPAN STYLE=\"font-size:18px;\"><B>NICOL\u00c1S DARIO LATOURRETTE BO</B></SPAN><SPAN STYLE=\"font-size:18px;\"> por iniciativa y medios propios restaura todo el acervo museogr\u00e1fico. A partir del 2005 es </SPAN><SPAN STYLE=\"font-size:18px;\"><B>PROTECTOR VITALICIO DEL MUSEO CASA DE LA INDEPENDENCIA.</B></SPAN></SPAN></DIV></div>",
+ "shadow": false,
+ "data": {
+  "name": "HTMLText78462"
  },
  "borderRadius": 0,
  "paddingTop": 10,
@@ -12438,32 +12462,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_F6CDB9A7_FBDD_B6F4_41EE_A2EFA05EC171",
- "class": "PanoramaCameraSequence",
- "restartMovementOnUserInteraction": false
-},
-{
- "movements": [
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_in"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 323,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "linear"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_out"
-  }
- ],
- "id": "sequence_C19E900C_FC47_75BB_41C1_B3AE4CA471C6",
+ "id": "sequence_C8F95422_FC7D_5DEF_41DD_2821F35B16ED",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -12674,7 +12673,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F7061700_FBDC_BBAC_41CC_DAF2805F9251, this.camera_C0421FCC_FC47_6AB4_41EA_CE8A5816C369); this.mainPlayList.set('selectedIndex', 1)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F7061700_FBDC_BBAC_41CC_DAF2805F9251, this.camera_C8BA33AB_FC7D_5AFD_41D9_D5FF679F2BFC); this.mainPlayList.set('selectedIndex', 1)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -12720,7 +12719,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F706ADA0_FBDD_6EEB_41E7_89669CB6F8F8, this.camera_C07BDFDC_FC47_6A5B_41E9_AC999D2BA679); this.mainPlayList.set('selectedIndex', 3)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F706ADA0_FBDD_6EEB_41E7_89669CB6F8F8, this.camera_C88263BD_FC7D_5AD4_41EF_21851314A331); this.mainPlayList.set('selectedIndex', 3)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -13033,7 +13032,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C0727FEB_FC47_6A7C_41E6_AAD408F4BEB2",
+ "id": "sequence_F6CDB9A7_FBDD_B6F4_41EE_A2EFA05EC171",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -13059,31 +13058,6 @@
   }
  ],
  "id": "sequence_F706A9A8_FBDD_B6FC_41BE_3724C6EAF811",
- "class": "PanoramaCameraSequence",
- "restartMovementOnUserInteraction": false
-},
-{
- "movements": [
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_in"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 323,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "linear"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_out"
-  }
- ],
- "id": "sequence_C1FE6090_FC47_76AC_41DD_54F914FAAAF1",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -13541,7 +13515,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F706B8DF_FBDD_D655_41EA_1570FCD25C93, this.camera_C1A53061_FC47_766C_41E3_DF1F36A690E4); this.mainPlayList.set('selectedIndex', 7)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F706B8DF_FBDD_D655_41EA_1570FCD25C93, this.camera_C8D2F441_FC7D_5DAC_41C2_D25A7D6D2E48); this.mainPlayList.set('selectedIndex', 7)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -13587,7 +13561,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F69C32A4_FBDC_BAEB_41EE_8A361BE250BF, this.camera_C1D63071_FC47_766C_41EC_1730C21279FA); this.mainPlayList.set('selectedIndex', 9)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F69C32A4_FBDC_BAEB_41EE_8A361BE250BF, this.camera_C8DE6450_FC7D_5DAB_41EE_7C8B1D12BE07); this.mainPlayList.set('selectedIndex', 9)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -13649,7 +13623,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6C39AA0_FBDD_6AEC_41E1_49FCC7301719, this.camera_C0726FEB_FC47_6A7C_41E0_F0D36C23C9C8); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6C39AA0_FBDD_6AEC_41E1_49FCC7301719, this.camera_C88B33CF_FC7D_5AB4_41D8_B95BE565A4A8); this.mainPlayList.set('selectedIndex', 2)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -13695,7 +13669,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6C1712D_FBDD_B7F4_41DD_35CA6E10FFC4, this.camera_C068FFFB_FC47_6A5C_41B6_CA4D34364BFD); this.mainPlayList.set('selectedIndex', 4)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6C1712D_FBDD_B7F4_41DD_35CA6E10FFC4, this.camera_C892B3E1_FC7D_5A6D_41CA_4CC0E21A6D0A); this.mainPlayList.set('selectedIndex', 4)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -14232,7 +14206,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C1865032_FC47_75EF_41EC_A31140DA7C74",
+ "id": "sequence_F70949A9_FBDD_B6FC_41DA_D4A831467966",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -14257,7 +14231,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_F70949A9_FBDD_B6FC_41DA_D4A831467966",
+ "id": "sequence_C8C49432_FC7D_5DEF_41EE_3C30903796DE",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -14514,7 +14488,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F706ADA0_FBDD_6EEB_41E7_89669CB6F8F8, this.camera_D2EC51BD_FC47_76D5_41E4_CE060FAF2F32); this.mainPlayList.set('selectedIndex', 3)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F706ADA0_FBDD_6EEB_41E7_89669CB6F8F8, this.camera_C83CD488_FC7D_5EBC_41E6_C47F8B585D46); this.mainPlayList.set('selectedIndex', 3)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -14536,6 +14510,31 @@
  },
  "class": "HotspotPanoramaOverlay",
  "enabledInCardboard": true
+},
+{
+ "movements": [
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_in"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 323,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "linear"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_out"
+  }
+ ],
+ "id": "sequence_C892D3E1_FC7D_5A6D_41E1_2F58F66E861E",
+ "class": "PanoramaCameraSequence",
+ "restartMovementOnUserInteraction": false
 },
 {
  "yaw": -139.8,
@@ -14621,7 +14620,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F6C39AA0_FBDD_6AEC_41E1_49FCC7301719, this.camera_C1862032_FC47_75EF_41D0_096CB9BF3219); this.mainPlayList.set('selectedIndex', 2)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F6C39AA0_FBDD_6AEC_41E1_49FCC7301719, this.camera_C8F3B413_FC7D_5DAC_41C1_31A984A45FD9); this.mainPlayList.set('selectedIndex', 2)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -15539,7 +15538,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C1BD5042_FC47_75AC_41E3_075C03C39316",
+ "id": "sequence_C8F3C413_FC7D_5DAC_41B9_BB9420097891",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -15564,32 +15563,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C1AE0052_FC47_75AF_41A6_9824511FE392",
- "class": "PanoramaCameraSequence",
- "restartMovementOnUserInteraction": false
-},
-{
- "movements": [
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_in"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 323,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "linear"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_out"
-  }
- ],
- "id": "sequence_C1CAB081_FC47_76AD_41D6_E1DAC1244F1E",
+ "id": "sequence_C8BA63AB_FC7D_5AFD_41EA_985D9032035B",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -15617,6 +15591,32 @@
  "id": "sequence_F70969A9_FBDD_B6FC_41E9_E5E5E1F79068",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
+},
+{
+ "scrollBarColor": "#000000",
+ "paddingLeft": 10,
+ "id": "htmlText_D7765463_FC4C_FE6C_41DB_2635E370BDED",
+ "width": "100%",
+ "paddingRight": 10,
+ "minHeight": 0,
+ "borderSize": 0,
+ "minWidth": 0,
+ "propagateClick": false,
+ "paddingBottom": 10,
+ "height": "100%",
+ "scrollBarOpacity": 0.5,
+ "scrollBarVisible": "rollOver",
+ "class": "HTMLText",
+ "scrollBarMargin": 2,
+ "backgroundOpacity": 0,
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Para el logro de su independencia, el Paraguay tuvo que enfrentar dos situaciones:</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">a) el dominio espa\u00f1ol, para cuya ca\u00edda bast\u00f3 el incruento pronunciamiento del 14 y 15 de mayo de 1811; y</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">b) la pretensi\u00f3n de la junta de Buenos Aires, a partir de mayo de 1810, de conservar en su beneficio la integridad territorial del extinguido Virreynato del R\u00edo de La Plata. La Provincia del Paraguay, todav\u00eda bajo dominio espa\u00f1ol, rechaz\u00f3 categ\u00f3ricamente esa pretensi\u00f3n. Fue especialmente elocuente la decisi\u00f3n de los jefes, oficiales y tropas paraguayos que enfrentaron victoriosamente en Paraguay y Tacuary a la expedici\u00f3n de Manuel Belgrano, brazo armado de las pretensiones de Buenos Aires. Producida la independencia nacional, mediante el consenso y decisi\u00f3n de los pr\u00f3ceres - civiles, militares y eclesi\u00e1sticos - los gobiernos de Buenos Aires siguieron insistiendo en su prop\u00f3sito de lograr la sumisi\u00f3n del Paraguay, mediante toda clase de presi\u00f3n: pol\u00edtica, militar y econ\u00f3mica.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">La sola menci\u00f3n de la fecha de reconocimiento de nuestra independencia -1852 - muestra con evidencia cuan obstinado fue el empe\u00f1o por negar aquella realidad de hecho y de derecho de que habl\u00f3 Don Carlos, cuando desde las columnas de \"El Paraguayo Independiente\", fundamentaba las razones que avalaban aquella decisi\u00f3n irreversible.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">La lucha por la independencia absorbi\u00f3 el concurso ciudadano de miles de paraguayos. Desde los combatientes de Paraguar\u00ed y Tacuary, los protagonistas del pronunciamiento del 14/15 de Mayo de 1811 los sostenedores de la afirmaci\u00f3n de nuestra emancipaci\u00f3n en los Congresos de 1811, 1813, 1814, 1816, 1842; los jefes y oficiales y tropa que guarnec\u00edan nuestras fronteras; militantes de \u00f3rdenes religiosas, capellanes de nuestro Ej\u00e9rcito; intelectuales y artesanos empe\u00f1ados en la larga vigilia, integran la extensa y honrosa n\u00f3mina de 'Pr\u00f3ceres\" de nuestra independencia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Muchos nombres, protagonistas directos de las victorias sobre Belgrano, como del movimiento de mayo y otros acontecimientos decisivos, habitualmente no son siquiera mencionados; los Quin de Valdovinos, los comandantes Lu\u00eds Cavallero, Pascual Urdapilleta, los Capitanes , Gervasio Acosta, Juan Bautista Acosta, Blas Jos\u00e9 Rojas de Aranda, Jos\u00e9 Mart\u00edn Fleytas, Jos\u00e9 Joaqu\u00edn y Miguel Antonio Montiel, Amancio Insaurralde, Antonio Zavala; Pedro Jos\u00e9 Genes, Juan Antonio Gonz\u00e1lez, Francisco Barrios, Sebasti\u00e1n Taboada, Vicente Antonio Matiauda, son algunos de los pr\u00f3ceres olvidados.</SPAN></SPAN></DIV></div>",
+ "shadow": false,
+ "data": {
+  "name": "HTMLText77131"
+ },
+ "borderRadius": 0,
+ "paddingTop": 10,
+ "scrollBarWidth": 10
 },
 {
  "yaw": 33.79,
@@ -16095,57 +16095,7 @@
    "easing": "cubic_out"
   }
  ],
- "id": "sequence_C1A55061_FC47_766C_41C1_5DB3316AA6A1",
- "class": "PanoramaCameraSequence",
- "restartMovementOnUserInteraction": false
-},
-{
- "movements": [
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_in"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 323,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "linear"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_out"
-  }
- ],
- "id": "sequence_D2EC41BD_FC47_76D5_41E6_9AC409547A8B",
- "class": "PanoramaCameraSequence",
- "restartMovementOnUserInteraction": false
-},
-{
- "movements": [
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_in"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 323,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "linear"
-  },
-  {
-   "yawSpeed": 7.96,
-   "yawDelta": 18.5,
-   "class": "DistancePanoramaCameraMovement",
-   "easing": "cubic_out"
-  }
- ],
- "id": "sequence_C0422FCC_FC47_6AB4_41E3_E3FE3345CA56",
+ "id": "sequence_C88273BD_FC7D_5AD4_41E0_D21BC5B67FD5",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
 },
@@ -17188,6 +17138,31 @@
    "easing": "cubic_out"
   }
  ],
+ "id": "sequence_C88B53CF_FC7D_5AB4_41E4_2FB4FE009F5F",
+ "class": "PanoramaCameraSequence",
+ "restartMovementOnUserInteraction": false
+},
+{
+ "movements": [
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_in"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 323,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "linear"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_out"
+  }
+ ],
  "id": "sequence_F706C9A8_FBDD_B6FC_41D3_23FBA53A034F",
  "class": "PanoramaCameraSequence",
  "restartMovementOnUserInteraction": false
@@ -17195,7 +17170,7 @@
 {
  "scrollBarColor": "#000000",
  "paddingLeft": 10,
- "id": "htmlText_D11FE24B_FC45_F5BC_41DC_24D876169B31",
+ "id": "htmlText_D776C92E_FC45_77F4_41D2_8D3D6C133200",
  "width": "100%",
  "paddingRight": 10,
  "minHeight": 0,
@@ -17209,10 +17184,10 @@
  "class": "HTMLText",
  "scrollBarMargin": 2,
  "backgroundOpacity": 0,
- "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">El 14 demayo de 1811, por el estrecho callej\u00f3n contiguo a esta antigua casona, resonaron los pasos de quienes hicieron el deso compartido por todo un pueblo: vivir en una tierra propia, libre e independiente del imperio espa\u00f1ol y de la Junta de Buenos Aires.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Esta casa fue constru\u00edda en 1772 por el espa\u00f1ol Antonio Mart\u00ednez S\u00e1enz y su esposa la paraguaya Petrona Caballero, con paredes de adobe, techo de tejas y armaz\u00f3n de palmas y tacuaras, al modo tradicional de la \u00e9poca, tal como puede apreciarse hasta hoy.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">El solar fue heredado por sus hijos Pedro Pablo y Sebasti\u00e1n Antonio, convirti\u00e9ndose, por diversas circunstancias, en un lugar seguro y discreto para las reuniones secretas en las que se gest\u00f3 la ca\u00edda del gobierno espa\u00f1ol.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">El Capit\u00e1n Pedro Juan Caballero, primo de los due\u00f1os de casa, se hospedaba all\u00ed cuando llegaba a la capital desde Tobat\u00ed, su pueblo natal, convergiendo con otros pr\u00f3ceres, como Do\u00f1a Juana Mar\u00eda de Lara -mayordoma de la catedral- cuya residencia, ubicada en la vereda de enfrente, era albergue habitual de su sobrino el Capit\u00e1n Vicente Ignacio Iturbe. Otro asiduo visitante era el Capit\u00e1n Juan Bautista Rivarola que durante sus frecuentes estad\u00edas en Asunci\u00f3n se hospedaba en casa de su suegra, vecina del lugar.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Las reuniones contaban as\u00ed mismo con otras ilustres personas: Fulgencio Yegros, que manten\u00eda un noviazgo con Facunda Micaela Speratti, cu\u00f1ada de Pedro Pablo Mart\u00ednez S\u00e1enz al igual que el del Teniente Mariano Recalde que a su vez cortejaba a Virginia Mar\u00edn, cu\u00f1ada del otro propietario, Sebasti\u00e1n Antonio.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">El Callej\u00f3n Hist\u00f3rico representa uno de los lugares m\u00e1s significativos de la casa, pues diversos relatos de la \u00e9poca coinciden en que por all\u00ed salieron los patriotas para tomar los cuarteles e intimar rendici\u00f3n al Gobernador espa\u00f1ol Bernardo de Velazco.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Las narraciones orales aseguran que la callejuela tambi\u00e9n fue transitada por Do\u00f1a Juana Mar\u00eda de Lara para dirigirse a la Catedral de Asunci\u00f3n a pedir al Padre Mariano Molas el \"santo y se\u00f1a\" del triunfo: un repique continuado de campanas que en la madrugada del 15 de mayo convoc\u00f3 al pueblo a celebrar el nacimiento del Paraguay como naci\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">En el proceso de Independencia paraguaya no existi\u00f3 derramamiento de sangre. Ante la intimidaci\u00f3n de los patriotas, el Gobernador espa\u00f1ol Bernardo de Velazco depuso armas y acept\u00f3 formar parte de un gobierno interino conjuntamente con el Doctor Jos\u00e9 Gaspar Rodr\u00edguez de Francia y el Capit\u00e1n Juan Valeriano Zevallos.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Con m\u00e1s de doscientos veintiocho a\u00f1os de existencia, el hoy Museo Casa de la Independencia constituye no solamente un s\u00edmbolo de libertad, sino tambi\u00e9n un invalorable patrimonio cultural. Es uno de las m\u00e1s antiguos solares coloniales que perduran y que evoca a la Asunci\u00f3n de finales del siglo XVIII.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Como testimonio de que esta casa fue gestada la emancipaci\u00f3n del pa\u00eds, durante el gobierno de Carlos Antonio L\u00f3pez por decreto de abril de 1849, se estableci\u00f3 llamar 14 de mayo a la calle de adelante del Callej\u00f3n Hist\u00f3rico, que en la esquina converge con la calle Presidente Franco.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">El solar Mart\u00ednez S\u00e1enz sigui\u00f3 siendo propiedad de particulares hasta el a\u00f1o 1943 cuando fue adquirido por el Estado paraguayo, que en 1961 lo declar\u00f3 Monumento Hist\u00f3rico Nacional.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">Por ser uno de los \u00faltimos vestigios edilicios de la colonia, su permanencia es vita, para el fortalecimiento de nuestra identidad y de nuestra cultura. Hacia los a\u00f1os \u00b450 estuvo a punto de perecer bajo la acci\u00f3n de la picota. La oportuna y en\u00e9rgica intervenci\u00f3n de un grupo de historiadores, liderada por Juan B. Bill, Carlos Pusineri Scala y Roberto Quevedo, impidi\u00f3 la destrucci\u00f3n total de tan valioso patrimonio.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:0.83vmax;\"><BR STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-size:0.63vmax;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0vmax; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:0.83vmax;\">En el marco de los 150 a\u00f1os de la independencia del Paraguay, a solicitud ciudadana, el inmueble fue restaurado e inaugurado como Museo de la Casa de la Independencia el 14 de mayo de 1965. Una parte del predio original fue cercenado y demolido, convirti\u00e9ndose en estacionamiento de veh\u00edculos. Existieron varias tratativas para su adquisici\u00f3n, entre \u00e9stos tres proyectos de Ley de Expropiaci\u00f3n, que nunca llegaron a feliz t\u00e9rmino.</SPAN></SPAN></DIV></div>",
+ "html": "<div style=\"text-align:left; color:#000; \"><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">En \u00e9ste solar, propiedad en condominio de los hermanos MART\u00cdNEZ S\u00c1ENZ sol\u00eda hospedarse el Capit\u00e1n PEDRO JUAN CAVALLERO cuando ven\u00eda a la capital desde su pueblo natal de Tobat\u00ed, pues era primo de los due\u00f1os de casa.</SPAN></SPAN></DIV><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Muy asidua a la casa era Do\u00f1a JUANA MAR\u00cdA DE LARA, cuyo domicilio se hallaba al frente. Esta era mayordoma permanente de la Catedral y del templo Santo Domingo. Su sobrino era el pr\u00f3cer VICENTE IGNACIO ITURBE, quien habitualmente se hospedaba en casa de la ilustre patricia.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">El Capit\u00e1n JUAN BAUTISTA RIVAROLA, quien resid\u00eda en Barrero Grande (hoy Eusebio Ayala), cuando viajaba a la ciudad buscaba albergue en la casa de su suegra quien ten\u00eda su propiedad a la vera del antiguo Callej\u00f3n.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Frecuentaba la casa, el pr\u00f3cer FULGENCIO YEGROS quien festejaba a FACUNDA MICAELA SPERATTI, cu\u00f1ada de PEDRO PABLO MART\u00cdNEZ S\u00c1ENZ. Ella viv\u00eda tambi\u00e9n en la casona y contrajeron matrimonio seis meses despu\u00e9s de nuestra independencia. Era tambi\u00e9n asiduo visitante de la casa el Teniente MARIANO RECALDE que en la misma \u00e9poca festejaba a VIRGINIA MAR\u00cdN, cu\u00f1ada de SEBASTI\u00c1N ANTONIO MART\u00cdNEZ S\u00c1ENZ. Estos se unieron en matrimonio en marzo de 1813.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Por lo tanto para los principales protagonistas de nuestra independencia, el sitio m\u00e1s c\u00f3modo y disimulado donde reunirse fue la casa de los MART\u00cdNEZ S\u00c1ENZ quienes utilizaban la misma no solo con fines rom\u00e1nticos sino tambi\u00e9n como sede de las reuniones secretas en la que se conspiraba contra el gobierno espa\u00f1ol.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Toda esa conspiraci\u00f3n culmin\u00f3 la noche del 14 de Mayo de 1811 cuando los patriotas dieron el golpe encabezados por PEDRO JUAN CAVALLERO.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Estos hombres salieron por el callej\u00f3n contiguo a la Casa, hoy llamado \"CALLEJ\u00d3N HIST\u00d3RICO\" y se dirigieron hacia la casa del Gobernador espa\u00f1ol distante a pocas cuadras del lugar.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Tomaron los cuarteles y en la madrugada del 15 de Mayo, ante la firme decisi\u00f3n de los patriotas que dieron un plazo perentorio, el Gobernador BERNARDO DE VELAZCO Y HUIDOBRO, entreg\u00f3 el mando.</SPAN></SPAN></DIV><p STYLE=\"margin:0; line-height:18px;\"><BR STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:12px;font-family:Arial, Helvetica, sans-serif;\"/></p><DIV STYLE=\"text-align:left;\"><SPAN STYLE=\"letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;\"><SPAN STYLE=\"font-size:18px;\">Lo hermoso de nuestra independencia es que la misma se consigui\u00f3 solamente con paraguayos y sin derramamiento de sangre. Esta Casa es la m\u00e1s grande en su significado hist\u00f3rico, puesto que en ella se gest\u00f3 la emancipaci\u00f3n definitiva de la corona espa\u00f1ola.</SPAN></SPAN></DIV></div>",
  "shadow": false,
  "data": {
-  "name": "HTMLText82759"
+  "name": "HTMLText75236"
  },
  "borderRadius": 0,
  "paddingTop": 10,
@@ -17361,7 +17336,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F706B8DF_FBDD_D655_41EA_1570FCD25C93, this.camera_C1CA9081_FC47_76AD_41DE_D771CF119BAD); this.mainPlayList.set('selectedIndex', 7)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F706B8DF_FBDD_D655_41EA_1570FCD25C93, this.camera_C82B0460_FC7D_5E6C_41ED_5C3A0A60EF9F); this.mainPlayList.set('selectedIndex', 7)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -17407,7 +17382,7 @@
  ],
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_F706A4BC_FBDC_FED4_41E5_2818744CA4C6, this.camera_C1FE4090_FC47_76AC_41D6_887DB1530097); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_F706A4BC_FBDC_FED4_41E5_2818744CA4C6, this.camera_C8375472_FC7D_5E6F_41E8_D8A3368B86D5); this.mainPlayList.set('selectedIndex', 0)",
    "mapColor": "#FF0000",
    "class": "HotspotPanoramaOverlayArea"
   }
@@ -17429,6 +17404,31 @@
  },
  "class": "HotspotPanoramaOverlay",
  "enabledInCardboard": true
+},
+{
+ "movements": [
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_in"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 323,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "linear"
+  },
+  {
+   "yawSpeed": 7.96,
+   "yawDelta": 18.5,
+   "class": "DistancePanoramaCameraMovement",
+   "easing": "cubic_out"
+  }
+ ],
+ "id": "sequence_C8E7F403_FC7D_5DAD_41E0_2E00D330D753",
+ "class": "PanoramaCameraSequence",
+ "restartMovementOnUserInteraction": false
 },
 {
  "frameCount": 24,
