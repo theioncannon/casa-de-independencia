@@ -1,7 +1,7 @@
 {
- "theme_color": "#FFFFFF",
  "name": "Casa de Independencia",
  "description": "El patrimonio histórico donde secretamente nació la independencia del Paraguay.",
+ "theme_color": "#FFFFFF",
  "start_url": "index.htm",
  "background_color": "#FFFFFF",
  "icons": [
